@@ -22,7 +22,7 @@ namespace Design_Dashboard_Modern.Producto
         }
         //salir otra prueva sato es dios 
         // dame la sabiduria Espiritu Santo
-        //sanliente cuatro
+        //sanliente cuatro.
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
