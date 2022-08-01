@@ -21,6 +21,7 @@ namespace Design_Dashboard_Modern.Producto
             InitializeComponent();
         }
         //salir otra prueva sato es dios 
+        // dame la sabiduria Espiritu Santo
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
