@@ -20,6 +20,7 @@ namespace Design_Dashboard_Modern.Producto
         {
             InitializeComponent();
         }
+        //salir otra prueva
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
