@@ -20,12 +20,9 @@ namespace Design_Dashboard_Modern.Producto
         {
             InitializeComponent();
         }
-        //salir otra prueva sato es dios 
-        // dame la sabiduria Espiritu Santo
-        //sanliente cuatro.
         private void Salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
         }
         string xFortoruta = "";
        
