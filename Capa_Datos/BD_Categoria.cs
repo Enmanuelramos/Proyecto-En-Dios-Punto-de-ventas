@@ -99,6 +99,6 @@ namespace Capa_Datos
             }
                 
         }
-        //Prueva prueva
+        //como puedo 
     }
 }
