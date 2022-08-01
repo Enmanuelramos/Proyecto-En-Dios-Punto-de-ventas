@@ -97,7 +97,8 @@ namespace Capa_Datos
                 MessageBox.Show("error al Mostrar" + Ex.Message, "Capa datos BD_Mostrar_Categoria", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return null;
             }
-
+                
         }
+        //Prueva
     }
 }
