@@ -22,7 +22,7 @@ namespace Design_Dashboard_Modern.Producto
         }
         private void Salir_Click(object sender, EventArgs e)
         {
-            //this.Close();
+            this.Close();
         }
         string xFortoruta = "";
        
