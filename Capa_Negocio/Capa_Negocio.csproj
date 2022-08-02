@@ -49,6 +49,7 @@
     <Compile Include="RN_Marca.cs" />
     <Compile Include="RN_Procutos.cs" />
     <Compile Include="RN_Proveedor.cs" />
+    <Compile Include="RN_Tipo_Documento.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">

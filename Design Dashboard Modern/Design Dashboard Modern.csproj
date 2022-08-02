@@ -219,6 +219,10 @@
     <None Include="imagen\warning_48px.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">
+      <Project>{9CAF1EE9-05EB-4B5E-BAEF-AD2CC7E1C8D1}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.csproj">
       <Project>{19EB9D60-CD58-4129-9AFB-1D52C25C88E1}</Project>
       <Name>Capa_Entidad</Name>

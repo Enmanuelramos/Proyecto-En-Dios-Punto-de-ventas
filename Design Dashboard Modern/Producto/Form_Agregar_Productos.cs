@@ -11,6 +11,7 @@ using Design_Dashboard_Modern.Utilitarios;
 using Design_Dashboard_Modern.Proveedor;
 using Capa_Entidad;
 using Capa_Negocio;
+using Capa_Datos;
 
 namespace Design_Dashboard_Modern.Producto
 {
@@ -209,9 +210,59 @@ namespace Design_Dashboard_Modern.Producto
                 MessageBox.Show("Error al cargar la imagen" + EX.Message);
             }
         }
+        private void Registrar_Kardex(string Id_Tipo)
+        {
+            RN_Kardex Kar = new RN_Kardex();
+            EN_Kardex EnKAr = new EN_Kardex();
+
+            try
+            {
+                if (Kar.BD_Verificar_Producto_SiTieneKardex(Id_Tipo) == true)
+                {
+                    return; // ya tiene un kardex
+                }
+                else
+                {
+                    string IDkar = RN_Tipo_Documento.RN_Numero_ID(6);
+                    Kar.RN_Registrar_Kaxdex(IDkar, Id_Tipo, textBoxpro.Text);
+
+                    if (BD_Kardex.segurado == true)
+                    {
+                        RN_Tipo_Documento.RN_Actualizar_Tipo_Document_CorelativoProducto(6);
+
+                        EnKAr.IdKardex = IDkar;
+                        EnKAr.Item = 1;
+                        EnKAr.Doc_soporte = "000";
+                        EnKAr.Det_operacion = "Inicio de Kardex";
+                        // entrada 
+                        EnKAr.Cantidad_In = Convert.ToString(" 0");
+                        EnKAr.Precio_Unit_In = Convert.ToString(" 0");
+                        EnKAr.Costo_Total_In = Convert.ToString(" 0");
+                        // salida
+                        EnKAr.Cantidad_Out = Convert.ToString(" 0");
+                        EnKAr.Precio_Unt_Out = Convert.ToString(" 0");
+                        EnKAr.Importe_Total_Out = Convert.ToString(" 0");
+                        // Saldos
+                        EnKAr.Cantidad_Saldo = Convert.ToString(" 0");
+                        EnKAr.Promedio = Convert.ToString(" 0");
+                        EnKAr.Costo_Total_Saldo = Convert.ToString(" 0");
+
+                        Kar.RN_Registrar_Detalle_Kardex(EnKAr);
+
+                        if (BD_Kardex.detsaved == true)
+                        {
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error al guardar  " + ex.Message);
+            }
+        }
         private void Registrar_Productos()
         {
-            Frm_Filtro filtro = new Frm_Filtro();
             RN_Procutos Product = new RN_Procutos();
             EN_Productos EnPro = new EN_Productos();
 
@@ -241,19 +292,32 @@ namespace Design_Dashboard_Modern.Producto
                 EnPro.ValorporProd = 0;
 
                 Product.RN_Insertar_Productos(EnPro);
+                if (BD_Productos.seguardo == true)
+                {
+                    if (comboBoxTipoProducto.SelectedIndex == 0)
+                    {
+                        Registrar_Kardex(textIDproducto.Text);
+                    }
+
+                    RN_Tipo_Documento.RN_Actualizar_Tipo_Document_CorelativoProducto(4);
+
+                    Frm_Filtro Filtro = new Frm_Filtro();
+
+                    Filtro.Show();
+                    MessageBox.Show("Se guardo el registor del producto Exitosamente");
+                    Filtro.Hide();
+
+                    this.Tag = "A";
+                    this.Close();
+                }
 
             }
             catch (Exception Ex)
             {
                 MessageBox.Show("error al guardar el registro del producto " + Ex.Message);
             }
-            filtro.Show();
-            MessageBox.Show("Se guardo el registor del producto Exitosamente");
-            filtro.Hide();
-
-            this.Tag = "A";
-            this.Close();
         }
+
         private void textBoxFrankUtilidad_TextChanged(object sender, EventArgs e)
         {
             textBoxFrankUtilidad.Text = textBoxFrankUtilidad.Text.Replace(",", ".");
