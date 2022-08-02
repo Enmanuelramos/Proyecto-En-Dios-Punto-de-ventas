@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RN_Categoria.cs" />
+    <Compile Include="RN_Kardex.cs" />
     <Compile Include="RN_Marca.cs" />
     <Compile Include="RN_Procutos.cs" />
     <Compile Include="RN_Proveedor.cs" />
