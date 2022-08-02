@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Capa_Datos
 {
     public class BD_Kardex : BD_Conexion
-    { //cambio
+    { //cambio peue
         public static bool segurado = false;
         public static bool detsaved = false;
         public void BD_Registrar_Kaxdex(string idKardex, string idProduct, string idProvee)
