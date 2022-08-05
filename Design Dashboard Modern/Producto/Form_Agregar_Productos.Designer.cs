@@ -61,6 +61,7 @@ namespace Design_Dashboard_Modern.Producto
             this.IdProducto = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxPociento = new System.Windows.Forms.TextBox();
             this.idCat = new System.Windows.Forms.Label();
             this.idMarca = new System.Windows.Forms.Label();
             this.textBoxpro = new System.Windows.Forms.TextBox();
@@ -73,7 +74,6 @@ namespace Design_Dashboard_Modern.Producto
             this.bunifuThinButtonRegistrar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButtonLimpiar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBoxProducto = new System.Windows.Forms.PictureBox();
-            this.textBoxPociento = new System.Windows.Forms.TextBox();
             this.PanelProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
             this.panel1.SuspendLayout();
@@ -454,6 +454,18 @@ namespace Design_Dashboard_Modern.Producto
             this.panel1.Size = new System.Drawing.Size(990, 531);
             this.panel1.TabIndex = 102;
             // 
+            // textBoxPociento
+            // 
+            this.textBoxPociento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxPociento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPociento.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPociento.ForeColor = System.Drawing.Color.Black;
+            this.textBoxPociento.Location = new System.Drawing.Point(863, 118);
+            this.textBoxPociento.Name = "textBoxPociento";
+            this.textBoxPociento.Size = new System.Drawing.Size(27, 26);
+            this.textBoxPociento.TabIndex = 114;
+            this.textBoxPociento.Text = "%";
+            // 
             // idCat
             // 
             this.idCat.Enabled = false;
@@ -598,18 +610,6 @@ namespace Design_Dashboard_Modern.Producto
             this.pictureBoxProducto.TabIndex = 102;
             this.pictureBoxProducto.TabStop = false;
             // 
-            // textBoxPociento
-            // 
-            this.textBoxPociento.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxPociento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPociento.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPociento.ForeColor = System.Drawing.Color.Black;
-            this.textBoxPociento.Location = new System.Drawing.Point(863, 118);
-            this.textBoxPociento.Name = "textBoxPociento";
-            this.textBoxPociento.Size = new System.Drawing.Size(27, 26);
-            this.textBoxPociento.TabIndex = 114;
-            this.textBoxPociento.Text = "%";
-            // 
             // Form_Agregar_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,6 +624,7 @@ namespace Design_Dashboard_Modern.Producto
             this.Name = "Form_Agregar_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Agregar_Productos";
+            this.Load += new System.EventHandler(this.Form_Agregar_Productos_Load);
             this.PanelProducto.ResumeLayout(false);
             this.PanelProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();

@@ -21,6 +21,10 @@ namespace Design_Dashboard_Modern.Producto
         {
             InitializeComponent();
         }
+         private void Form_Agregar_Productos_Load(object sender, EventArgs e)
+        {
+            textIDproducto.Text = RN_Tipo_Documento.RN_Numero_ID(4);
+        }
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -183,7 +187,6 @@ namespace Design_Dashboard_Modern.Producto
         }
         private void labelBuscarImagen_Click(object sender, EventArgs e)
         {
-
             var filePath = string.Empty;
             try
             {
@@ -235,17 +238,17 @@ namespace Design_Dashboard_Modern.Producto
                         EnKAr.Doc_soporte = "000";
                         EnKAr.Det_operacion = "Inicio de Kardex";
                         // entrada 
-                        EnKAr.Cantidad_In = Convert.ToString(" 0");
-                        EnKAr.Precio_Unit_In = Convert.ToString(" 0");
-                        EnKAr.Costo_Total_In = Convert.ToString(" 0");
+                        EnKAr.Cantidad_In = Convert.ToString("0");
+                        EnKAr.Precio_Unit_In = Convert.ToString("0");
+                        EnKAr.Costo_Total_In = Convert.ToString("0");
                         // salida
-                        EnKAr.Cantidad_Out = Convert.ToString(" 0");
-                        EnKAr.Precio_Unt_Out = Convert.ToString(" 0");
-                        EnKAr.Importe_Total_Out = Convert.ToString(" 0");
+                        EnKAr.Cantidad_Out = Convert.ToString("0");
+                        EnKAr.Precio_Unt_Out = Convert.ToString("0");
+                        EnKAr.Importe_Total_Out = Convert.ToString("0");
                         // Saldos
-                        EnKAr.Cantidad_Saldo = Convert.ToString(" 0");
-                        EnKAr.Promedio = Convert.ToString(" 0");
-                        EnKAr.Costo_Total_Saldo = Convert.ToString(" 0");
+                        EnKAr.Cantidad_Saldo = Convert.ToString("0");
+                        EnKAr.Promedio = Convert.ToString("0");
+                        EnKAr.Costo_Total_Saldo = Convert.ToString("0");
 
                         Kar.RN_Registrar_Detalle_Kardex(EnKAr);
 
@@ -411,5 +414,7 @@ namespace Design_Dashboard_Modern.Producto
                 Registrar_Productos();
             }
         }
+
+       
     }
 }

@@ -13,7 +13,11 @@ namespace Design_Dashboard_Modern.Proveedor
         {
             InitializeComponent();
         }
-        
+        private void Fmr_Add_Proveedor_Load(object sender, EventArgs e)
+        {
+            textIDproveedor.Text = RN_Tipo_Documento.RN_Numero_ID(5);
+        }
+
         private void btn_cerrar_Click(object sender, EventArgs e)
         {
             this.Tag = "";
@@ -168,5 +172,7 @@ namespace Design_Dashboard_Modern.Proveedor
         {
             Limpiar_TextBox();
         }
+
+        
     }
 }

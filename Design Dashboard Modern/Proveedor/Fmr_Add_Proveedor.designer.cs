@@ -430,6 +430,7 @@
             this.Name = "Fmr_Add_Proveedor";
             this.ShowInTaskbar = false;
             this.Text = "Frm_Reg_Prod";
+            this.Load += new System.EventHandler(this.Fmr_Add_Proveedor_Load);
             this.pnl_titu.ResumeLayout(false);
             this.pnl_titu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictIMGProduct)).EndInit();
