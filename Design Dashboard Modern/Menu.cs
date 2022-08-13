@@ -70,16 +70,18 @@ namespace Design_Dashboard_Modern
             Child.BringToFront();
             Child.Show();
         }
-
         private void ButtonProductos_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Form_Agregar_Productos());
-            
+                OpenChildFrom(new Form_Agregar_Productos());
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            OpenChildFrom(new Fmr_Add_Proveedor());
+        { Frm_Vista_Proveedor vista = new Frm_Vista_Proveedor();
+            OpenChildFrom(new Frm_Vista_Proveedor());
+
+            //if(vista.buttonAgregarProveedor_Click().)
         }
+
+       
     }
 }

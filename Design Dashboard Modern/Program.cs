@@ -18,7 +18,7 @@ namespace Design_Dashboard_Modern
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Vista_Proveedor());
+            Application.Run(new Menu());
             //Application.Run(new Form_Agregar_Productos());
         }
     }

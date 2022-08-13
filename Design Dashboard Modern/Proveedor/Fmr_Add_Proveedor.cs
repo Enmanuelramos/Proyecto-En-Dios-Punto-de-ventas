@@ -20,7 +20,7 @@ namespace Design_Dashboard_Modern.Proveedor
 
         private void btn_cerrar_Click(object sender, EventArgs e)
         {
-            this.Tag = "";
+            this.Tag = "A";
             this.Close();
         }
 

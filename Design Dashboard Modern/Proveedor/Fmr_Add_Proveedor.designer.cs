@@ -59,6 +59,7 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_titu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictIMGProduct)).BeginInit();
             this.panel1.SuspendLayout();
@@ -416,6 +417,13 @@
             this.panel1.Size = new System.Drawing.Size(774, 571);
             this.panel1.TabIndex = 30;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.pnl_titu;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // Fmr_Add_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,6 +437,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Fmr_Add_Proveedor";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Reg_Prod";
             this.Load += new System.EventHandler(this.Fmr_Add_Proveedor_Load);
             this.pnl_titu.ResumeLayout(false);
@@ -473,5 +482,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

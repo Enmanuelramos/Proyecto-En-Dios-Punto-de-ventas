@@ -43,12 +43,6 @@
             this.listViewProveedor = new System.Windows.Forms.ListView();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.labelCedula = new System.Windows.Forms.Label();
-            this.labelrubro = new System.Windows.Forms.Label();
-            this.labelDNI = new System.Windows.Forms.Label();
-            this.labelNombre = new System.Windows.Forms.Label();
-            this.labelDireccion = new System.Windows.Forms.Label();
-            this.labelIDProv = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.mostrarTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -218,11 +212,11 @@
             // 
             this.listViewProveedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listViewProveedor.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.listViewProveedor.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewProveedor.HideSelection = false;
             this.listViewProveedor.Location = new System.Drawing.Point(12, 137);
             this.listViewProveedor.Name = "listViewProveedor";
-            this.listViewProveedor.Size = new System.Drawing.Size(1123, 452);
+            this.listViewProveedor.Size = new System.Drawing.Size(1125, 452);
             this.listViewProveedor.TabIndex = 9;
             this.listViewProveedor.UseCompatibleStateImageBehavior = false;
             // 
@@ -241,69 +235,6 @@
             this.bunifuSeparator1.TabIndex = 8;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
-            // 
-            // labelCedula
-            // 
-            this.labelCedula.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelCedula.Location = new System.Drawing.Point(582, 94);
-            this.labelCedula.Name = "labelCedula";
-            this.labelCedula.Size = new System.Drawing.Size(90, 23);
-            this.labelCedula.TabIndex = 3;
-            this.labelCedula.Text = "N°  TELEFONO";
-            this.labelCedula.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelrubro
-            // 
-            this.labelrubro.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelrubro.Location = new System.Drawing.Point(673, 94);
-            this.labelrubro.Name = "labelrubro";
-            this.labelrubro.Size = new System.Drawing.Size(180, 23);
-            this.labelrubro.TabIndex = 4;
-            this.labelrubro.Text = "RUBRO";
-            this.labelrubro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelDNI
-            // 
-            this.labelDNI.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDNI.Location = new System.Drawing.Point(90, 94);
-            this.labelDNI.Name = "labelDNI";
-            this.labelDNI.Size = new System.Drawing.Size(90, 23);
-            this.labelDNI.TabIndex = 5;
-            this.labelDNI.Text = "N° RUC DNI";
-            this.labelDNI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelNombre
-            // 
-            this.labelNombre.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(181, 94);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(400, 23);
-            this.labelNombre.TabIndex = 6;
-            this.labelNombre.Text = "RAZON SOCIAL O NOMBRE ";
-            this.labelNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelDireccion
-            // 
-            this.labelDireccion.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelDireccion.Location = new System.Drawing.Point(854, 94);
-            this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(286, 23);
-            this.labelDireccion.TabIndex = 7;
-            this.labelDireccion.Text = "DIRECCION";
-            this.labelDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelIDProv
-            // 
-            this.labelIDProv.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelIDProv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDProv.Location = new System.Drawing.Point(9, 94);
-            this.labelIDProv.Name = "labelIDProv";
-            this.labelIDProv.Size = new System.Drawing.Size(80, 23);
-            this.labelIDProv.TabIndex = 2;
-            this.labelIDProv.Text = "ID PROV";
-            this.labelIDProv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // contextMenuStrip1
             // 
@@ -359,7 +290,7 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
-            // Frm_Explo_Proveedor
+            // Frm_Vista_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -367,16 +298,10 @@
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.listViewProveedor);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.labelDireccion);
-            this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.labelDNI);
-            this.Controls.Add(this.labelrubro);
-            this.Controls.Add(this.labelCedula);
-            this.Controls.Add(this.labelIDProv);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Frm_Explo_Proveedor";
+            this.Name = "Frm_Vista_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Explorador de Productos";
             this.Load += new System.EventHandler(this.Frm_Explo_Prod_Load);
@@ -403,12 +328,6 @@
         private System.Windows.Forms.Button buttonAgregarProveedor;
         private System.Windows.Forms.Button buttonEditarProveedor;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Label labelDireccion;
-        private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.Label labelDNI;
-        private System.Windows.Forms.Label labelrubro;
-        private System.Windows.Forms.Label labelCedula;
-        private System.Windows.Forms.Label labelIDProv;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mostrarTodosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
