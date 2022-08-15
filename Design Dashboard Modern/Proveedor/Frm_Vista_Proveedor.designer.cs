@@ -51,9 +51,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.copiarIDProveedor = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pnl_titu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -70,7 +72,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1145, 43);
+            this.pnl_titu.Size = new System.Drawing.Size(1059, 57);
             this.pnl_titu.TabIndex = 0;
             this.pnl_titu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseMove);
             // 
@@ -84,7 +86,7 @@
             this.btn_minimi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_minimi.ForeColor = System.Drawing.Color.White;
             this.btn_minimi.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimi.Image")));
-            this.btn_minimi.Location = new System.Drawing.Point(1053, 4);
+            this.btn_minimi.Location = new System.Drawing.Point(967, 4);
             this.btn_minimi.Name = "btn_minimi";
             this.btn_minimi.Size = new System.Drawing.Size(32, 32);
             this.btn_minimi.TabIndex = 7;
@@ -102,7 +104,7 @@
             this.btn_cerrar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(1103, 4);
+            this.btn_cerrar.Location = new System.Drawing.Point(1017, 4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(32, 32);
             this.btn_cerrar.TabIndex = 6;
@@ -115,7 +117,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(9, 11);
+            this.label1.Location = new System.Drawing.Point(412, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 20);
             this.label1.TabIndex = 0;
@@ -128,9 +130,9 @@
             this.panel1.Controls.Add(this.buttonEditarProveedor);
             this.panel1.Controls.Add(this.buttonBuscar);
             this.panel1.Controls.Add(this.txt_buscar_proveedor);
-            this.panel1.Location = new System.Drawing.Point(1, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1145, 47);
+            this.panel1.Size = new System.Drawing.Size(1050, 47);
             this.panel1.TabIndex = 1;
             // 
             // buttonAgregarProveedor
@@ -181,9 +183,9 @@
             this.buttonBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuscar.ForeColor = System.Drawing.Color.White;
             this.buttonBuscar.Image = ((System.Drawing.Image)(resources.GetObject("buttonBuscar.Image")));
-            this.buttonBuscar.Location = new System.Drawing.Point(1104, 8);
+            this.buttonBuscar.Location = new System.Drawing.Point(1014, 7);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(32, 32);
+            this.buttonBuscar.Size = new System.Drawing.Size(27, 32);
             this.buttonBuscar.TabIndex = 11;
             this.buttonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonBuscar.UseVisualStyleBackColor = true;
@@ -200,10 +202,10 @@
             this.txt_buscar_proveedor.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_buscar_proveedor.LineMouseHoverColor = System.Drawing.Color.SkyBlue;
             this.txt_buscar_proveedor.LineThickness = 3;
-            this.txt_buscar_proveedor.Location = new System.Drawing.Point(801, 12);
+            this.txt_buscar_proveedor.Location = new System.Drawing.Point(771, 12);
             this.txt_buscar_proveedor.Margin = new System.Windows.Forms.Padding(4);
             this.txt_buscar_proveedor.Name = "txt_buscar_proveedor";
-            this.txt_buscar_proveedor.Size = new System.Drawing.Size(340, 33);
+            this.txt_buscar_proveedor.Size = new System.Drawing.Size(268, 33);
             this.txt_buscar_proveedor.TabIndex = 10;
             this.txt_buscar_proveedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_buscar_proveedor.OnValueChanged += new System.EventHandler(this.txt_buscar_proveedor_OnValueChanged);
@@ -214,9 +216,9 @@
             this.listViewProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewProveedor.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewProveedor.HideSelection = false;
-            this.listViewProveedor.Location = new System.Drawing.Point(12, 137);
+            this.listViewProveedor.Location = new System.Drawing.Point(3, 86);
             this.listViewProveedor.Name = "listViewProveedor";
-            this.listViewProveedor.Size = new System.Drawing.Size(1125, 452);
+            this.listViewProveedor.Size = new System.Drawing.Size(1043, 464);
             this.listViewProveedor.TabIndex = 9;
             this.listViewProveedor.UseCompatibleStateImageBehavior = false;
             // 
@@ -229,9 +231,9 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(130)))), ((int)(((byte)(180)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(12, 116);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(12, 65);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(1123, 15);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(1018, 15);
             this.bunifuSeparator1.TabIndex = 8;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -290,15 +292,24 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel2.Controls.Add(this.listViewProveedor);
+            this.panel2.Controls.Add(this.bunifuSeparator1);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Location = new System.Drawing.Point(3, 63);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1050, 539);
+            this.panel2.TabIndex = 10;
+            // 
             // Frm_Vista_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 601);
+            this.ClientSize = new System.Drawing.Size(1059, 614);
             this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.listViewProveedor);
-            this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Vista_Proveedor";
@@ -309,6 +320,7 @@
             this.pnl_titu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -336,5 +348,6 @@
         private System.Windows.Forms.ToolStripMenuItem copiarIDProveedor;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.Panel panel2;
     }
 }

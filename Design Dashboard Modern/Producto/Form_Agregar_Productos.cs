@@ -31,22 +31,7 @@ namespace Design_Dashboard_Modern.Producto
         }
         string xFortoruta = "";
        
-        private void LblBuscadorCategoria_Click(object sender, EventArgs e)
-        {
-            Frm_Filtro filtro = new Frm_Filtro();
-            Fmr_Categoria categoria = new Fmr_Categoria();
-
-            filtro.Show();
-            categoria.ShowDialog();
-            filtro.Hide();
-
-            if (categoria.Tag.ToString() == "A")
-            {
-                idCat.Text = categoria.textBoxIDCategoria.Text;
-                textBoxCategoria.Text = categoria.textNombretCategortia.Text;
-            }
-
-        }
+      
 
         private void LblBuscadorProveedor_Click(object sender, EventArgs e)
         {
@@ -78,6 +63,22 @@ namespace Design_Dashboard_Modern.Producto
                 idMarca.Text = marca.textBoxIDMarca.Text;
                 textBoxMarca.Text = marca.textMarca.Text;
             }
+        }
+        private void LblBuscadorCategoria_Click(object sender, EventArgs e)
+        {
+            Frm_Filtro filtro = new Frm_Filtro();
+            Fmr_Categoria categoria = new Fmr_Categoria();
+
+            filtro.Show();
+            categoria.ShowDialog();
+            filtro.Hide();
+
+            if (categoria.Tag.ToString() == "A")
+            {
+                idCat.Text = categoria.textBoxIDCategoria.Text;
+                textBoxCategoria.Text = categoria.textNombretCategortia.Text;
+            }
+
         }
         private bool Validar_Caja_Texto()
         {
@@ -277,8 +278,8 @@ namespace Design_Dashboard_Modern.Producto
                 EnPro.Pre_compraSol = textBoxPrecioCompra.Text;
                 EnPro.Frank = textBoxFrankUtilidad.Text;
                 EnPro.StockActual = Convert.ToString("0");
-                EnPro.IdCat = Convert.ToInt32(idMarca.Text);
-                EnPro.IdMar = Convert.ToInt32(idCat.Text);
+                EnPro.IdCat = Convert.ToInt32(idCat.Text);
+                EnPro.IdMar = Convert.ToInt32(idMarca.Text);
 
                 if (xFortoruta.Trim().Length < 5 )
                 {
@@ -414,7 +415,5 @@ namespace Design_Dashboard_Modern.Producto
                 Registrar_Productos();
             }
         }
-
-       
     }
 }

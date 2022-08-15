@@ -38,7 +38,8 @@ namespace Capa_Datos
                 {
                     cn.Close();
                 }
-                MessageBox.Show("Error al guardar " + Ex.Message, "Capa datos BD_Registrar_Categoria", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show( Ex.Message);
+                //MessageBox.Show("Error al guardar " + Ex.Message, "Capa datos BD_Registrar_Categoria", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }

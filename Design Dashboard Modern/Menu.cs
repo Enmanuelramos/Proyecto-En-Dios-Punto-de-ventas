@@ -47,6 +47,7 @@ namespace Design_Dashboard_Modern
                 panelMenu.Width = 226;
                 Panelanimator.ShowSync(panelMenu);
                 Logoanimator.ShowSync(Logo);
+                labelNombreUsuario.Visible = true;
             }
             else
             {
@@ -54,6 +55,7 @@ namespace Design_Dashboard_Modern
                 panelMenu.Visible = false;
                 panelMenu.Width = 60;
                 Panelanimator.ShowSync(panelMenu);
+                labelNombreUsuario.Visible = false;
             }
         }
         private void OpenChildFrom(Form Child)

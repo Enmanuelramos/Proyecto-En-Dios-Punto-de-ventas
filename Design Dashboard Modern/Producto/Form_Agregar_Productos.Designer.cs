@@ -124,7 +124,7 @@ namespace Design_Dashboard_Modern.Producto
             // 
             this.labelBuscarImagen.AutoSize = true;
             this.labelBuscarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscarImagen.ForeColor = System.Drawing.Color.Black;
+            this.labelBuscarImagen.ForeColor = System.Drawing.Color.DodgerBlue;
             this.labelBuscarImagen.Location = new System.Drawing.Point(774, 496);
             this.labelBuscarImagen.Name = "labelBuscarImagen";
             this.labelBuscarImagen.Size = new System.Drawing.Size(98, 16);
@@ -469,7 +469,7 @@ namespace Design_Dashboard_Modern.Producto
             // idCat
             // 
             this.idCat.Enabled = false;
-            this.idCat.Location = new System.Drawing.Point(399, 160);
+            this.idCat.Location = new System.Drawing.Point(386, 170);
             this.idCat.Name = "idCat";
             this.idCat.Size = new System.Drawing.Size(20, 13);
             this.idCat.TabIndex = 113;

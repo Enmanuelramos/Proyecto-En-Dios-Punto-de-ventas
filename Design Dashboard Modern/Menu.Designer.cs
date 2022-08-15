@@ -35,7 +35,6 @@ namespace Design_Dashboard_Modern
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -53,6 +52,8 @@ namespace Design_Dashboard_Modern
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.Logoanimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Panelanimator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtbMenu)).BeginInit();
@@ -73,7 +74,8 @@ namespace Design_Dashboard_Modern
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panelMenu.Controls.Add(this.bunifuSeparator1);
+            this.panelMenu.Controls.Add(this.labelNombreUsuario);
+            this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Controls.Add(this.Logo);
             this.panelMenu.Controls.Add(this.bunifuFlatButton3);
             this.panelMenu.Controls.Add(this.bunifuFlatButton2);
@@ -87,26 +89,12 @@ namespace Design_Dashboard_Modern
             this.panelMenu.Size = new System.Drawing.Size(226, 614);
             this.panelMenu.TabIndex = 0;
             // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.Panelanimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.Logoanimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(4, 123);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(220, 35);
-            this.bunifuSeparator1.TabIndex = 5;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
             // Logo
             // 
             this.Logoanimator.SetDecoration(this.Logo, BunifuAnimatorNS.DecorationType.None);
             this.Panelanimator.SetDecoration(this.Logo, BunifuAnimatorNS.DecorationType.None);
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(4, 6);
+            this.Logo.Location = new System.Drawing.Point(58, 19);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(116, 109);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +124,7 @@ namespace Design_Dashboard_Modern
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 50D;
             this.bunifuFlatButton3.IsTab = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(2, 242);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(2, 279);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -172,7 +160,7 @@ namespace Design_Dashboard_Modern
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 50D;
             this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(4, 205);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(4, 242);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -209,7 +197,7 @@ namespace Design_Dashboard_Modern
             this.ButtonProductos.IconVisible = true;
             this.ButtonProductos.IconZoom = 50D;
             this.ButtonProductos.IsTab = true;
-            this.ButtonProductos.Location = new System.Drawing.Point(4, 164);
+            this.ButtonProductos.Location = new System.Drawing.Point(4, 201);
             this.ButtonProductos.Name = "ButtonProductos";
             this.ButtonProductos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ButtonProductos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -233,7 +221,7 @@ namespace Design_Dashboard_Modern
             this.BtbMenu.ImageActive = null;
             this.BtbMenu.Location = new System.Drawing.Point(180, 6);
             this.BtbMenu.Name = "BtbMenu";
-            this.BtbMenu.Size = new System.Drawing.Size(36, 25);
+            this.BtbMenu.Size = new System.Drawing.Size(40, 25);
             this.BtbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtbMenu.TabIndex = 1;
             this.BtbMenu.TabStop = false;
@@ -411,6 +399,32 @@ namespace Design_Dashboard_Modern
             this.Panelanimator.DefaultAnimation = animation1;
             this.Panelanimator.TimeStep = 0.03F;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.Logoanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Panelanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.label1.Location = new System.Drawing.Point(70, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MI Perfil";
+            // 
+            // labelNombreUsuario
+            // 
+            this.labelNombreUsuario.AutoSize = true;
+            this.Logoanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
+            this.Panelanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.labelNombreUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.labelNombreUsuario.Location = new System.Drawing.Point(39, 133);
+            this.labelNombreUsuario.Name = "labelNombreUsuario";
+            this.labelNombreUsuario.Size = new System.Drawing.Size(151, 20);
+            this.labelNombreUsuario.TabIndex = 5;
+            this.labelNombreUsuario.Text = "Nombre del usuario";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -427,6 +441,7 @@ namespace Design_Dashboard_Modern
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtbMenu)).EndInit();
             this.header.ResumeLayout(false);
@@ -461,7 +476,8 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.PictureBox Minimizar;
         private System.Windows.Forms.PictureBox Maximizar;
         private System.Windows.Forms.PictureBox Salir;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         internal System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Label labelNombreUsuario;
+        private System.Windows.Forms.Label label1;
     }
 }

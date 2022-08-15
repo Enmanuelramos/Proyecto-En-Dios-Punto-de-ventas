@@ -19,7 +19,7 @@ namespace Design_Dashboard_Modern
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Menu());
-            //Application.Run(new Form_Agregar_Productos());
+            //Application.Run(new Fmr_Categoria());
         }
     }
 }
