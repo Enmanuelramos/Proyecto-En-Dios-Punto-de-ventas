@@ -74,14 +74,12 @@ namespace Design_Dashboard_Modern
         }
         private void ButtonProductos_Click(object sender, EventArgs e)
         {
-                OpenChildFrom(new Form_Agregar_Productos());
+                OpenChildFrom(new Frm_Explo_Productos());
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        { Frm_Vista_Proveedor vista = new Frm_Vista_Proveedor();
+        { 
             OpenChildFrom(new Frm_Vista_Proveedor());
-
-            //if(vista.buttonAgregarProveedor_Click().)
         }
 
        

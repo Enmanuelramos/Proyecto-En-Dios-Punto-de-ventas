@@ -47,7 +47,7 @@
     <Compile Include="RN_Categoria.cs" />
     <Compile Include="RN_Kardex.cs" />
     <Compile Include="RN_Marca.cs" />
-    <Compile Include="RN_Procutos.cs" />
+    <Compile Include="RN_Producto.cs" />
     <Compile Include="RN_Proveedor.cs" />
     <Compile Include="RN_Tipo_Documento.cs" />
   </ItemGroup>

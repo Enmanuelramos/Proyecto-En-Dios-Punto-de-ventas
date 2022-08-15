@@ -63,5 +63,96 @@ namespace Capa_Datos
                 //MessageBox.Show(""+EX);
             }
         }
+        public DataTable Mostrar_Productos()
+        {
+            SqlConnection cn = new SqlConnection();
+
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlDataAdapter Mostrar = new SqlDataAdapter("sp_cargar_Todos_Productos", cn);
+                Mostrar.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable datos = new DataTable();
+
+                Mostrar.Fill(datos);
+                Mostrar = null;
+                return datos;
+
+            }
+            catch (Exception Ex)
+            {
+
+                MessageBox.Show("No se Puede Mostrar" + Ex.Message, "BD_Productos BD_Mostrar_Productos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            return null;
+        }
+        public DataTable BD_Buscar_Productos(string v)
+        {
+            SqlConnection cn = new SqlConnection();
+
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlDataAdapter buscar = new SqlDataAdapter("Sp_buscador_Productos", cn);
+                buscar.SelectCommand.CommandType = CommandType.StoredProcedure;
+                buscar.SelectCommand.Parameters.AddWithValue("@valor", v);
+                DataTable data = new DataTable();
+
+                buscar.Fill(data);
+                buscar = null;
+                return data;
+            }
+            catch (Exception Ex)
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Open();
+                }
+                MessageBox.Show("No se Puede buscar" + Ex.Message, "BD_Producto BD_buscar_Productos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            return null;
+        }
+        public void BD_Modificar_Productos(EN_Productos ModPro)
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlCommand Modificar = new SqlCommand("Sp_Editar_Producto", cn);
+                Modificar.CommandTimeout = 20;
+                Modificar.CommandType = CommandType.StoredProcedure;
+
+                Modificar.Parameters.AddWithValue("@idpro", ModPro.Idproducto);
+                Modificar.Parameters.AddWithValue("@idprove", ModPro.IdProveedor);
+                Modificar.Parameters.AddWithValue("@descripcion", ModPro.Descripcion);
+                Modificar.Parameters.AddWithValue("@frank", ModPro.Frank);
+                Modificar.Parameters.AddWithValue("@Pre_compraSol", ModPro.Pre_compraSol);
+                Modificar.Parameters.AddWithValue("@StockActual", ModPro.StockActual);
+                Modificar.Parameters.AddWithValue("@idCat", ModPro.IdCat);
+                Modificar.Parameters.AddWithValue("@idMar", ModPro.IdMar);
+                Modificar.Parameters.AddWithValue("@Pre_Venta_Menor", ModPro.Pre_Venta_Menor);
+                Modificar.Parameters.AddWithValue("@Pre_Venta_Mayor", ModPro.Pre_Venta_Mayor);
+                Modificar.Parameters.AddWithValue("@UndMdida", ModPro.UndMdida);
+                Modificar.Parameters.AddWithValue("@Utilidad", ModPro.Utilidad);
+                Modificar.Parameters.AddWithValue("@TipoProd ", ModPro.TipoProd);
+                Modificar.Parameters.AddWithValue("@Foto  ", ModPro.Foto);
+                Modificar.Parameters.AddWithValue("@ValorporProd ", ModPro.ValorporProd);
+
+                cn.Open();
+                Modificar.ExecuteNonQuery();
+                cn.Close();
+
+                edito = true;
+            }
+            catch (Exception Ex)
+            {
+                edito = false;
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+                MessageBox.Show("No se pudo Modificar los datos" + Ex.Message, "BD_Modificar_Producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

@@ -35,6 +35,8 @@ namespace Design_Dashboard_Modern
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.labelNombreUsuario = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,8 +54,6 @@ namespace Design_Dashboard_Modern
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.Logoanimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Panelanimator = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtbMenu)).BeginInit();
@@ -88,6 +88,32 @@ namespace Design_Dashboard_Modern
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(226, 614);
             this.panelMenu.TabIndex = 0;
+            // 
+            // labelNombreUsuario
+            // 
+            this.labelNombreUsuario.AutoSize = true;
+            this.Logoanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
+            this.Panelanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.labelNombreUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.labelNombreUsuario.Location = new System.Drawing.Point(39, 133);
+            this.labelNombreUsuario.Name = "labelNombreUsuario";
+            this.labelNombreUsuario.Size = new System.Drawing.Size(151, 20);
+            this.labelNombreUsuario.TabIndex = 5;
+            this.labelNombreUsuario.Text = "Nombre del usuario";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.Logoanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Panelanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.label1.Location = new System.Drawing.Point(70, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MI Perfil";
             // 
             // Logo
             // 
@@ -399,32 +425,6 @@ namespace Design_Dashboard_Modern
             this.Panelanimator.DefaultAnimation = animation1;
             this.Panelanimator.TimeStep = 0.03F;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.Logoanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.Panelanimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.label1.Location = new System.Drawing.Point(70, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MI Perfil";
-            // 
-            // labelNombreUsuario
-            // 
-            this.labelNombreUsuario.AutoSize = true;
-            this.Logoanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
-            this.Panelanimator.SetDecoration(this.labelNombreUsuario, BunifuAnimatorNS.DecorationType.None);
-            this.labelNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.labelNombreUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.labelNombreUsuario.Location = new System.Drawing.Point(39, 133);
-            this.labelNombreUsuario.Name = "labelNombreUsuario";
-            this.labelNombreUsuario.Size = new System.Drawing.Size(151, 20);
-            this.labelNombreUsuario.TabIndex = 5;
-            this.labelNombreUsuario.Text = "Nombre del usuario";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,8 +476,8 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.PictureBox Minimizar;
         private System.Windows.Forms.PictureBox Maximizar;
         private System.Windows.Forms.PictureBox Salir;
-        internal System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label labelNombreUsuario;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel panelDesktop;
     }
 }
