@@ -24,7 +24,7 @@ namespace Design_Dashboard_Modern.Proveedor
             this.Close();
         }
 
-        string xFortoruta;
+        string xFortoruta = "";
 
         //listo
         private void lbl_Abrir_Click(object sender, EventArgs e)

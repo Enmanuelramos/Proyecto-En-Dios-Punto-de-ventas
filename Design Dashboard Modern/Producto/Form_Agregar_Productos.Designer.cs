@@ -91,7 +91,7 @@ namespace Design_Dashboard_Modern.Producto
             this.PanelProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelProducto.Location = new System.Drawing.Point(0, 0);
             this.PanelProducto.Name = "PanelProducto";
-            this.PanelProducto.Size = new System.Drawing.Size(744, 52);
+            this.PanelProducto.Size = new System.Drawing.Size(744, 48);
             this.PanelProducto.TabIndex = 0;
             // 
             // Salir
@@ -112,7 +112,7 @@ namespace Design_Dashboard_Modern.Producto
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.ForeColor = System.Drawing.Color.White;
-            this.labelTitulo.Location = new System.Drawing.Point(280, 12);
+            this.labelTitulo.Location = new System.Drawing.Point(280, 10);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(204, 20);
             this.labelTitulo.TabIndex = 2;

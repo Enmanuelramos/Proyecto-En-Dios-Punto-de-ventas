@@ -58,11 +58,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_titu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictIMGProduct)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -78,7 +76,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1059, 43);
+            this.pnl_titu.Size = new System.Drawing.Size(613, 43);
             this.pnl_titu.TabIndex = 1;
             // 
             // btn_cerrar
@@ -91,7 +89,7 @@
             this.btn_cerrar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(1017, 4);
+            this.btn_cerrar.Location = new System.Drawing.Point(571, 4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(32, 32);
             this.btn_cerrar.TabIndex = 6;
@@ -112,18 +110,20 @@
             // 
             // textIDproveedor
             // 
+            this.textIDproveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textIDproveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textIDproveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textIDproveedor.Location = new System.Drawing.Point(275, 16);
+            this.textIDproveedor.Location = new System.Drawing.Point(161, 49);
             this.textIDproveedor.Name = "textIDproveedor";
             this.textIDproveedor.Size = new System.Drawing.Size(100, 25);
             this.textIDproveedor.TabIndex = 1;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(173, 25);
+            this.label2.Location = new System.Drawing.Point(68, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 6;
@@ -131,18 +131,20 @@
             // 
             // textNombreProveedor
             // 
+            this.textNombreProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textNombreProveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNombreProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textNombreProveedor.Location = new System.Drawing.Point(275, 51);
+            this.textNombreProveedor.Location = new System.Drawing.Point(159, 84);
             this.textNombreProveedor.Name = "textNombreProveedor";
             this.textNombreProveedor.Size = new System.Drawing.Size(424, 25);
             this.textNombreProveedor.TabIndex = 2;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(135, 60);
+            this.label3.Location = new System.Drawing.Point(30, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 16);
             this.label3.TabIndex = 8;
@@ -153,7 +155,7 @@
             this.label4.BackColor = System.Drawing.Color.DodgerBlue;
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1057, 43);
+            this.label4.Location = new System.Drawing.Point(611, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(2, 571);
             this.label4.TabIndex = 10;
@@ -163,7 +165,7 @@
             this.lbl_Abrir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Abrir.AutoSize = true;
             this.lbl_Abrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Abrir.Location = new System.Drawing.Point(281, 451);
+            this.lbl_Abrir.Location = new System.Drawing.Point(165, 484);
             this.lbl_Abrir.Name = "lbl_Abrir";
             this.lbl_Abrir.Size = new System.Drawing.Size(71, 16);
             this.lbl_Abrir.TabIndex = 12;
@@ -175,7 +177,7 @@
             this.textCorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textCorreo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCorreo.ForeColor = System.Drawing.Color.DimGray;
-            this.textCorreo.Location = new System.Drawing.Point(274, 235);
+            this.textCorreo.Location = new System.Drawing.Point(158, 268);
             this.textCorreo.Name = "textCorreo";
             this.textCorreo.Size = new System.Drawing.Size(424, 25);
             this.textCorreo.TabIndex = 7;
@@ -185,7 +187,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(209, 244);
+            this.label6.Location = new System.Drawing.Point(93, 277);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 16);
             this.label6.TabIndex = 14;
@@ -196,7 +198,7 @@
             this.textDNIProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textDNIProveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDNIProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textDNIProveedor.Location = new System.Drawing.Point(274, 193);
+            this.textDNIProveedor.Location = new System.Drawing.Point(158, 226);
             this.textDNIProveedor.Name = "textDNIProveedor";
             this.textDNIProveedor.Size = new System.Drawing.Size(193, 25);
             this.textDNIProveedor.TabIndex = 6;
@@ -206,7 +208,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(170, 202);
+            this.label7.Location = new System.Drawing.Point(54, 235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 16);
             this.label7.TabIndex = 16;
@@ -217,7 +219,7 @@
             this.textRubroProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textRubroProveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textRubroProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textRubroProveedor.Location = new System.Drawing.Point(273, 156);
+            this.textRubroProveedor.Location = new System.Drawing.Point(157, 189);
             this.textRubroProveedor.Name = "textRubroProveedor";
             this.textRubroProveedor.Size = new System.Drawing.Size(193, 25);
             this.textRubroProveedor.TabIndex = 5;
@@ -227,7 +229,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(204, 165);
+            this.label8.Location = new System.Drawing.Point(88, 198);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 16);
             this.label8.TabIndex = 18;
@@ -238,7 +240,7 @@
             this.textTelProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textTelProveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTelProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textTelProveedor.Location = new System.Drawing.Point(274, 118);
+            this.textTelProveedor.Location = new System.Drawing.Point(158, 151);
             this.textTelProveedor.Name = "textTelProveedor";
             this.textTelProveedor.Size = new System.Drawing.Size(193, 25);
             this.textTelProveedor.TabIndex = 4;
@@ -248,7 +250,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(144, 127);
+            this.label9.Location = new System.Drawing.Point(28, 160);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 16);
             this.label9.TabIndex = 20;
@@ -259,7 +261,7 @@
             this.textDictProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textDictProveedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDictProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.textDictProveedor.Location = new System.Drawing.Point(274, 85);
+            this.textDictProveedor.Location = new System.Drawing.Point(158, 118);
             this.textDictProveedor.Name = "textDictProveedor";
             this.textDictProveedor.Size = new System.Drawing.Size(424, 25);
             this.textDictProveedor.TabIndex = 3;
@@ -269,7 +271,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(190, 94);
+            this.label10.Location = new System.Drawing.Point(74, 127);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 16);
             this.label10.TabIndex = 22;
@@ -291,9 +293,9 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(33, 470);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(8, 503);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(712, 25);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(600, 25);
             this.bunifuSeparator1.TabIndex = 26;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -307,7 +309,8 @@
             this.PictIMGProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictIMGProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PictIMGProduct.ErrorImage = null;
-            this.PictIMGProduct.Location = new System.Drawing.Point(274, 314);
+            this.PictIMGProduct.Image = global::Design_Dashboard_Modern.Properties.Resources.descargar;
+            this.PictIMGProduct.Location = new System.Drawing.Point(158, 347);
             this.PictIMGProduct.Name = "PictIMGProduct";
             this.PictIMGProduct.Size = new System.Drawing.Size(136, 127);
             this.PictIMGProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -319,7 +322,7 @@
             this.textContacto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textContacto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textContacto.ForeColor = System.Drawing.Color.DimGray;
-            this.textContacto.Location = new System.Drawing.Point(274, 272);
+            this.textContacto.Location = new System.Drawing.Point(158, 305);
             this.textContacto.Name = "textContacto";
             this.textContacto.Size = new System.Drawing.Size(193, 25);
             this.textContacto.TabIndex = 8;
@@ -329,7 +332,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(134, 281);
+            this.label5.Location = new System.Drawing.Point(18, 314);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 16);
             this.label5.TabIndex = 27;
@@ -339,22 +342,22 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Limpiar";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 20;
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(251, 505);
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(130, 536);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(131, 50);
@@ -366,56 +369,28 @@
             // 
             this.bunifuThinButton22.ActiveBorderThickness = 1;
             this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Registrar";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButton22.IdleBorderThickness = 1;
             this.bunifuThinButton22.IdleCornerRadius = 20;
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(460, 505);
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(343, 536);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(131, 50);
             this.bunifuThinButton22.TabIndex = 29;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.PictIMGProduct);
-            this.panel1.Controls.Add(this.bunifuThinButton22);
-            this.panel1.Controls.Add(this.bunifuSeparator1);
-            this.panel1.Controls.Add(this.bunifuThinButton21);
-            this.panel1.Controls.Add(this.textNombreProveedor);
-            this.panel1.Controls.Add(this.lbl_Abrir);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textContacto);
-            this.panel1.Controls.Add(this.textIDproveedor);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textCorreo);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textDNIProveedor);
-            this.panel1.Controls.Add(this.textDictProveedor);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textRubroProveedor);
-            this.panel1.Controls.Add(this.textTelProveedor);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(145, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(774, 571);
-            this.panel1.TabIndex = 30;
             // 
             // bunifuDragControl1
             // 
@@ -429,11 +404,31 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1059, 614);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(613, 614);
+            this.Controls.Add(this.PictIMGProduct);
+            this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.pnl_titu);
+            this.Controls.Add(this.textNombreProveedor);
+            this.Controls.Add(this.textIDproveedor);
+            this.Controls.Add(this.lbl_Abrir);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textTelProveedor);
+            this.Controls.Add(this.textContacto);
+            this.Controls.Add(this.textRubroProveedor);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textDictProveedor);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textDNIProveedor);
+            this.Controls.Add(this.textCorreo);
+            this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Fmr_Add_Proveedor";
             this.ShowInTaskbar = false;
@@ -443,9 +438,8 @@
             this.pnl_titu.ResumeLayout(false);
             this.pnl_titu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictIMGProduct)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -481,7 +475,6 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

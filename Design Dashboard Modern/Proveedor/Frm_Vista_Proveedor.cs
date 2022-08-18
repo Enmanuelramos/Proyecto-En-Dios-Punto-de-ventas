@@ -35,17 +35,6 @@ namespace Design_Dashboard_Modern.Proveedor
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void pnl_titu_MouseMove(object sender, MouseEventArgs e)
-        {
-            //Utilitario obj = new Utilitario();
-
-            //if (e.Button ==MouseButtons.Left)
-            //{
-            //    obj.Mover_formulario(this);
-
-            //}
-        }
         private void Configurar_ListVew()
         {
             var listVewMarca = listViewProveedor;
@@ -142,38 +131,10 @@ namespace Design_Dashboard_Modern.Proveedor
 
             }
         }
-        //private Form currentChildForm;
-       
-        //Menu menu = new Menu();
-        //if (currentChildForm != null)
-        //{
-        //    currentChildForm.Close();
-        //}
-        //currentChildForm = Child;
-        //currentChildForm.TopLevel = false;
-        //currentChildForm.FormBorderStyle = FormBorderStyle.None;
-        //currentChildForm.Dock = DockStyle.Fill;
-        //menu.panelDesktop.Controls.Add(Child);
-        //Child.BringToFront();
-        //Child.Show();
+
 
         private void buttonAgregarProveedor_Click(object sender, EventArgs e)
         {
-            //void AbrirFormInPanel(object formHijo)
-            //{
-            //    Menu menu = new Menu();
-
-            //    if (menu.panelDesktop.Controls.Count > 0)
-            //        menu.panelDesktop.Controls.RemoveAt(0);
-            //    Form fh = formHijo as Form;
-            //    fh.TopLevel = false;
-            //    fh.FormBorderStyle = FormBorderStyle.None;
-            //    fh.Dock = DockStyle.Fill;
-            //    menu.panelDesktop.Controls.Add(fh);
-            //    menu.panelDesktop.Tag = fh;
-            //    fh.Show();
-            //}
-
             Frm_Filtro filtro = new Frm_Filtro();
             Fmr_Add_Proveedor Add = new Fmr_Add_Proveedor();
 

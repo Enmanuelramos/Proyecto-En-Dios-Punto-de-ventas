@@ -15,9 +15,9 @@ using Capa_Datos;
 
 namespace Design_Dashboard_Modern.Producto
 {
-    public partial class Form_Agregar_Productos : Form
+    public partial class Frm_Agregar_Productos : Form
     {
-        public Form_Agregar_Productos()
+        public Frm_Agregar_Productos()
         {
             InitializeComponent();
         }
