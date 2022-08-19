@@ -178,7 +178,7 @@ namespace Design_Dashboard_Modern.Producto
         {
 
             Frm_Filtro filtro = new Frm_Filtro();
-            Form_Agregar_Productos Add = new Form_Agregar_Productos();
+            Frm_Agregar_Productos Add = new Frm_Agregar_Productos();
 
             filtro.Show();
             Add.ShowDialog();
@@ -191,52 +191,52 @@ namespace Design_Dashboard_Modern.Producto
         }
         private void nuevoProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Fmr_Add_Producto Add = new Fmr_Add_Producto();
+            Frm_Filtro filtro = new Frm_Filtro();
+            Frm_Agregar_Productos Add = new Frm_Agregar_Productos();
 
-            //filtro.Show();
-            //Add.ShowDialog();
-            //filtro.Hide();
+            filtro.Show();
+            Add.ShowDialog();
+            filtro.Hide();
 
-            //if (Add.Tag.ToString() == "A")
-            //{
-            //    Cargar_Los_Productos();
-            //}
+            if (Add.Tag.ToString() == "A")
+            {
+                Cargar_Los_Productos();
+            }
         }
         private void mostrarTodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Frm_Advertencia Advert = new Frm_Advertencia();
-            //Fmr_Edit_Proveedor edit = new Fmr_Edit_Proveedor(); //error
+            Frm_Filtro filtro = new Frm_Filtro();
+            Frm_Editar_Productos edit = new Frm_Editar_Productos(); //error
 
-            //if (listViewProducto.SelectedIndices.Count == 0) //esto quiere decir que el usuario no ha seleccionado nada en la tabla
-            //{
-            //    filtro.Show();
-            //    Advert.textBox1.Text = "Seleccione el item que seas ediar"; ;
-            //    Advert.ShowDialog();
-            //    filtro.Hide();
-            //}
-            //else
-            //{
-            //    var lis = listViewProducto.SelectedItems[0];
-            //    string idProveedor = lis.SubItems[0].Text;
+            if (listViewProducto.SelectedIndices.Count == 0) //esto quiere decir que el usuario no ha seleccionado nada en la tabla
+            {
+                filtro.Show();
+                MessageBox.Show("Seleccione el item que deseas ediar","Editar productos",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                //Advert.textBox1.Text = "Seleccione el item que seas ediar"; ;
+                //Advert.ShowDialog();
+                filtro.Hide();
+            }
+            else
+            {
+                var lis = listViewProducto.SelectedItems[0];
+                string idProveedor = lis.SubItems[0].Text;
 
-            //    filtro.Show();
-            //    edit.Tag = idProveedor;
-            //    edit.ShowDialog();
-            //    filtro.Hide();
+                filtro.Show();
+                edit.Tag = idProveedor;
+                edit.ShowDialog();
+                filtro.Hide();
 
-            //    if (edit.Tag.ToString() == "A")
-            //    {
-            //        Cargar_Los_Productos();
-            //    }
-            //}
+                if (edit.Tag.ToString() == "A")
+                {
+                    Cargar_Los_Productos();
+                }
+            }
         }
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             Frm_Filtro filtro = new Frm_Filtro();
 
-            Form_Editar_Productos edit = new Form_Editar_Productos();
+            Frm_Editar_Productos edit = new Frm_Editar_Productos();
 
             if (listViewProducto.SelectedIndices.Count == 0)
             {

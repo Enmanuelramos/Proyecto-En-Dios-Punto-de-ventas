@@ -1,7 +1,7 @@
 ﻿
 namespace Design_Dashboard_Modern.Producto
 {
-    partial class Form_Agregar_Productos
+    partial class Frm_Agregar_Productos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Design_Dashboard_Modern.Producto
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Agregar_Productos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Agregar_Productos));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanelProducto = new System.Windows.Forms.Panel();
             this.Salir = new System.Windows.Forms.PictureBox();

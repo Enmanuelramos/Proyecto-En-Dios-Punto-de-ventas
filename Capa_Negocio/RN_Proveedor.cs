@@ -16,7 +16,7 @@ namespace Capa_Negocio
             BD_Proveedor Inserp = new BD_Proveedor();
             Inserp.BD_Insertar_Proveedor(v);
         }
-        public void RN_Modificar_Proveerdor(EN_Proveedor v)
+        public void RN_Modificar_Proveedor(EN_Proveedor v)
         {
             BD_Proveedor Modip = new BD_Proveedor();
             Modip.BD_Modificar_Proveerdor(v);

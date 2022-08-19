@@ -151,79 +151,77 @@ namespace Design_Dashboard_Modern.Proveedor
 
         private void nuevoProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
 
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Fmr_Add_Proveedor Add = new Fmr_Add_Proveedor();
 
-            //filtro.Show();
-            //Add.ShowDialog();
-            //filtro.Hide();
+            Frm_Filtro filtro = new Frm_Filtro();
+            Fmr_Add_Proveedor Add = new Fmr_Add_Proveedor();
 
-            //if (Add.Tag.ToString() == "A")
-            //{
-            //    Cargar_Los_Proveedor();
-            //}
+            filtro.Show();
+            Add.ShowDialog();
+            filtro.Hide();
+
+            if (Add.Tag.ToString() == "A")
+            {
+                Cargar_Los_Proveedor();
+            }
         }
 
         private void mostrarTodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Frm_Advertencia Advert = new Frm_Advertencia();
-            //Fmr_Edit_Proveedor edit = new Fmr_Edit_Proveedor();
+            Frm_Filtro filtro = new Frm_Filtro();
+          
+            Fmr_Editar_Proveedor edit = new Fmr_Editar_Proveedor();
 
-            //if (listViewProveedor.SelectedIndices.Count == 0) //esto quiere decir que el usuario no ha seleccionado nada en la tabla
-            //{
-            //    filtro.Show();
-            //    Advert.textBox1.Text = "Seleccione el item que seas ediar"; ;
-            //    Advert.ShowDialog();
-            //    filtro.Hide();
-            //}
-            //else
-            //{
-            //    var lis = listViewProveedor.SelectedItems[0];
-            //    string idProveedor = lis.SubItems[0].Text;
+            if (listViewProveedor.SelectedIndices.Count == 0) //esto quiere decir que el usuario no ha seleccionado nada en la tabla
+            {
+                filtro.Show();
+                MessageBox.Show("Seleccione un item para poder editar","Editar Proveedor",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                filtro.Hide();
+            }
+            else
+            {
+                var lis = listViewProveedor.SelectedItems[0];
+                string idProveedor = lis.SubItems[0].Text;
 
-            //    filtro.Show();
-            //    edit.Tag = idProveedor;
-            //    edit.ShowDialog();
-            //    filtro.Hide();
+                filtro.Show();
+                edit.Tag = idProveedor;
+                edit.ShowDialog();
+                filtro.Hide();
 
-            //    if (edit.Tag.ToString() == "A")
-            //    {
-            //        Cargar_Los_Proveedor();
-            //    }
-            //}
+                if (edit.Tag.ToString() == "A")
+                {
+                    Cargar_Los_Proveedor();
+                }
+            }
         }
 
         private void buttonEditarProveedor_Click(object sender, EventArgs e)
         {
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Frm_Advertencia Advert = new Frm_Advertencia();
-            //Fmr_Edit_Proveedor edit = new Fmr_Edit_Proveedor();
+            Frm_Filtro filtro = new Frm_Filtro();
 
-            //if (listViewProveedor.SelectedIndices.Count == 0)
-            //{
-            //    filtro.Show();
-            //    Advert.textBox1.Text = "Seleccione el item que seas ediar"; ;
-            //    Advert.ShowDialog();
-            //    filtro.Hide();
-            //}
-            //else
-            //{
-            //    var lis = listViewProveedor.SelectedItems[0];
-            //    string idProveedor = lis.SubItems[0].Text;
+            Fmr_Editar_Proveedor edit = new Fmr_Editar_Proveedor();
 
-            //    filtro.Show();
-            //    edit.Tag = idProveedor;
-            //    edit.ShowDialog();
-            //    filtro.Hide();
+            if (listViewProveedor.SelectedIndices.Count == 0)
+            {
+                filtro.Show();
+                MessageBox.Show("Seleccione el item que seas ediar","Editar Proveedor",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                filtro.Hide();
+            }
+            else
+            {
+                var lis = listViewProveedor.SelectedItems[0];
+                string idProveedor = lis.SubItems[0].Text;
 
-            //    if (edit.Tag.ToString() == "A")
-            //    {
-            //        Cargar_Los_Proveedor();
-            //    }
-            //}
+                filtro.Show();
+                edit.Tag = idProveedor;
+                edit.ShowDialog();
+                filtro.Hide();
+
+                if (edit.Tag.ToString() == "A")
+                {
+                    Cargar_Los_Proveedor();
+                }
+            }
         }
         
     }

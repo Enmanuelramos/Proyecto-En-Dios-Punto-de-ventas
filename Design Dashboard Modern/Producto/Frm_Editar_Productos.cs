@@ -15,13 +15,13 @@ using Capa_Datos;
 
 namespace Design_Dashboard_Modern.Producto
 {
-    public partial class Form_Editar_Productos : Form
+    public partial class Frm_Editar_Productos : Form
     {
-        public Form_Editar_Productos()
+        public Frm_Editar_Productos()
         {
             InitializeComponent();
         }
-         private void Form_Agregar_Productos_Load(object sender, EventArgs e)
+        private void Frm_Editar_Productos_Load(object sender, EventArgs e)
         {
             textIDproducto.Text = RN_Tipo_Documento.RN_Numero_ID(4);
             Buscar_Productos_Para_Editar(this.Tag.ToString());
@@ -205,6 +205,7 @@ namespace Design_Dashboard_Modern.Producto
                         xFortoruta = openFileDialog.FileName;
                         pictureBoxProducto.Load(xFortoruta);
                     }
+
                 }
             }
             catch (Exception EX)
@@ -282,11 +283,12 @@ namespace Design_Dashboard_Modern.Producto
                 EnPro.IdCat = Convert.ToInt32(idCat.Text);
                 EnPro.IdMar = Convert.ToInt32(idMarca.Text);
 
-                if (xFortoruta.Trim().Length < 5 )
+                if (xFortoruta.Trim().Length < 5)
                 {
                     EnPro.Foto = "_";
                 }
-                else{
+                else
+                {
                     EnPro.Foto = xFortoruta;
                 }
                 EnPro.Pre_Venta_Menor = textBoxPrecioMenor.Text;
@@ -303,7 +305,7 @@ namespace Design_Dashboard_Modern.Producto
                     Frm_Filtro Filtro = new Frm_Filtro();
 
                     Filtro.Show();
-                    MessageBox.Show("Se edito Exitosamente","Editar productos",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Se edito Exitosamente", "Editar productos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Filtro.Hide();
 
                     this.Tag = "A";
@@ -335,7 +337,7 @@ namespace Design_Dashboard_Modern.Producto
                     textBoxFrankUtilidad.Text = Convert.ToString(data.Rows[0]["Frank"]);
                     textBoxPrecioMayor.Text = Convert.ToString(data.Rows[0]["Pre_vntaxMayor"]);
                     textBoxPrecioMenor.Text = Convert.ToString(data.Rows[0]["Pre_vntaxMenor"]);
-                   
+
                     textBoxUtilidad.Text = Convert.ToString(data.Rows[0]["UtilidadUnit"]);
                     idMarca.Text = Convert.ToString(data.Rows[0]["Id_Marca"]);
                     idCat.Text = Convert.ToString(data.Rows[0]["Id_Cat"]);
@@ -349,6 +351,55 @@ namespace Design_Dashboard_Modern.Producto
             {
                 MessageBox.Show("No Se edito Corectamente el Producto " + Ex.Message, "Editar productos", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
+        }
+        private void LblBuscadorProveedor_Click_1(object sender, EventArgs e)
+        {
+            Frm_Filtro filtro = new Frm_Filtro();
+            Form_Listado_Proveedor ProNom = new Form_Listado_Proveedor();
+
+            filtro.Show();
+            ProNom.ShowDialog();
+            filtro.Hide();
+
+            if (ProNom.Tag.ToString() == "A")
+            {
+                textBoxpro.Text = ProNom.textBoxID.Text;
+                textBoxProveedor.Text = ProNom.textBoxNombre.Text;
+
+            }
+        }
+
+        private void LblBuscaodorMarca_Click_1(object sender, EventArgs e)
+        {
+            Frm_Filtro filtro = new Frm_Filtro();
+            Fmr_Marca marca = new Fmr_Marca();
+
+            filtro.Show();
+            marca.ShowDialog();
+            filtro.Hide();
+
+            if (marca.Tag.ToString() == "A")
+            {
+                idMarca.Text = marca.textBoxIDMarca.Text;
+                textBoxMarca.Text = marca.textMarca.Text;
+            }
+        }
+
+        private void LblBuscadorCategoria_Click_1(object sender, EventArgs e)
+        {
+            Frm_Filtro filtro = new Frm_Filtro();
+            Fmr_Categoria categoria = new Fmr_Categoria();
+
+            filtro.Show();
+            categoria.ShowDialog();
+            filtro.Hide();
+
+            if (categoria.Tag.ToString() == "A")
+            {
+                idCat.Text = categoria.textBoxIDCategoria.Text;
+                textBoxCategoria.Text = categoria.textNombretCategortia.Text;
+            }
+
         }
 
         private void textBoxFrankUtilidad_TextChanged(object sender, EventArgs e)
@@ -389,7 +440,7 @@ namespace Design_Dashboard_Modern.Producto
 
         private void textBoxPrecioCompra_TextChanged(object sender, EventArgs e)
         {
-            textBoxPrecioCompra.Text = textBoxPrecioCompra.Text.Replace(",",".");
+            textBoxPrecioCompra.Text = textBoxPrecioCompra.Text.Replace(",", ".");
             textBoxPrecioCompra.SelectionStart = textBoxPrecioCompra.Text.Length;
         }
 
@@ -405,7 +456,7 @@ namespace Design_Dashboard_Modern.Producto
 
         private void textBoxPrecioMenor_TextChanged(object sender, EventArgs e)
         {
-            textBoxPrecioMenor.Text = textBoxPrecioMenor.Text.Replace(",",".");
+            textBoxPrecioMenor.Text = textBoxPrecioMenor.Text.Replace(",", ".");
             textBoxPrecioMenor.SelectionStart = textBoxPrecioMenor.Text.Length;
         }
 
@@ -422,7 +473,7 @@ namespace Design_Dashboard_Modern.Producto
 
         private void textBoxPrecioMayor_TextChanged(object sender, EventArgs e)
         {
-            textBoxPrecioMayor.Text = textBoxPrecioMayor.Text.Replace(",",".");
+            textBoxPrecioMayor.Text = textBoxPrecioMayor.Text.Replace(",", ".");
             textBoxPrecioMayor.SelectionStart = textBoxPrecioMayor.Text.Length;
         }
 
@@ -444,5 +495,7 @@ namespace Design_Dashboard_Modern.Producto
                 Actualizar_Productos();
             }
         }
+
+        
     }
 }
