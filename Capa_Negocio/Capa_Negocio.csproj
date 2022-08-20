@@ -50,6 +50,7 @@
     <Compile Include="RN_Producto.cs" />
     <Compile Include="RN_Proveedor.cs" />
     <Compile Include="RN_Tipo_Documento.cs" />
+    <Compile Include="RN_Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">

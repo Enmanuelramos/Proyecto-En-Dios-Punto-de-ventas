@@ -72,7 +72,7 @@
             this.pnl_titu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titu.Location = new System.Drawing.Point(0, 0);
             this.pnl_titu.Name = "pnl_titu";
-            this.pnl_titu.Size = new System.Drawing.Size(1059, 57);
+            this.pnl_titu.Size = new System.Drawing.Size(1059, 43);
             this.pnl_titu.TabIndex = 0;
             // 
             // btn_minimi

@@ -50,6 +50,7 @@
     <Compile Include="BD_Productos.cs" />
     <Compile Include="BD_Proveedor.cs" />
     <Compile Include="BD_TipoDocumento.cs" />
+    <Compile Include="BD_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

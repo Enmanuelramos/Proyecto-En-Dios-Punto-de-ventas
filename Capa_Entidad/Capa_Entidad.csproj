@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="EN_Kardex.cs" />
     <Compile Include="EN_Proveedor.cs" />
+    <Compile Include="EN_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EN_Productos.cs" />
   </ItemGroup>
