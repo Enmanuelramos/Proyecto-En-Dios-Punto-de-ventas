@@ -117,10 +117,8 @@ namespace Design_Dashboard_Modern.Proveedor
             return true;
 
         }
-        
         private void Registrar_Proveedor()
         {
-
             try
             {
                 RN_Proveedor ProVee = new RN_Proveedor();
@@ -135,7 +133,6 @@ namespace Design_Dashboard_Modern.Proveedor
                 ProReg.Correo = textCorreo.Text;
                 ProReg.Contacto = textContacto.Text;
                 ProReg.Fotologo = xFortoruta;
-
 
                 ProVee.RN_Insertar_Proveedor(ProReg);
 

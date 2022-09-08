@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -223,6 +224,14 @@ namespace Design_Dashboard_Modern.Proveedor
                 }
             }
         }
-        
+        [DllImport("User32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("User32.dll")]
+        private extern static void SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        private void pnl_titu_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }

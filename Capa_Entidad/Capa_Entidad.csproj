@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EN_Clientes.cs" />
     <Compile Include="EN_Kardex.cs" />
     <Compile Include="EN_Proveedor.cs" />
     <Compile Include="EN_Usuario.cs" />

@@ -466,7 +466,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscadorCategoria.Name = "LblBuscadorCategoria";
             this.LblBuscadorCategoria.Size = new System.Drawing.Size(32, 23);
             this.LblBuscadorCategoria.TabIndex = 148;
-            this.LblBuscadorCategoria.Click += new System.EventHandler(this.LblBuscadorCategoria_Click_1);
+            this.LblBuscadorCategoria.Click += new System.EventHandler(this.LblBuscadorCategoria_Click);
             // 
             // LblBuscadorProveedor
             // 
@@ -475,7 +475,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscadorProveedor.Name = "LblBuscadorProveedor";
             this.LblBuscadorProveedor.Size = new System.Drawing.Size(32, 23);
             this.LblBuscadorProveedor.TabIndex = 147;
-            this.LblBuscadorProveedor.Click += new System.EventHandler(this.LblBuscadorProveedor_Click_1);
+            this.LblBuscadorProveedor.Click += new System.EventHandler(this.LblBuscadorProveedor_Click);
             // 
             // LblBuscaodorMarca
             // 
@@ -484,7 +484,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscaodorMarca.Name = "LblBuscaodorMarca";
             this.LblBuscaodorMarca.Size = new System.Drawing.Size(32, 23);
             this.LblBuscaodorMarca.TabIndex = 146;
-            this.LblBuscaodorMarca.Click += new System.EventHandler(this.LblBuscaodorMarca_Click_1);
+            this.LblBuscaodorMarca.Click += new System.EventHandler(this.LblBuscaodorMarca_Click);
             // 
             // bunifuThinButtonRegistrar
             // 

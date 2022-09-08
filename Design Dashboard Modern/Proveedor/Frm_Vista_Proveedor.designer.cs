@@ -74,6 +74,7 @@
             this.pnl_titu.Name = "pnl_titu";
             this.pnl_titu.Size = new System.Drawing.Size(1059, 43);
             this.pnl_titu.TabIndex = 0;
+            this.pnl_titu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_titu_MouseDown);
             // 
             // btn_minimi
             // 
@@ -313,7 +314,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Vista_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Explorador de Productos";
+            this.Text = "Proveedores";
             this.Load += new System.EventHandler(this.Frm_Explo_Prod_Load);
             this.pnl_titu.ResumeLayout(false);
             this.pnl_titu.PerformLayout();

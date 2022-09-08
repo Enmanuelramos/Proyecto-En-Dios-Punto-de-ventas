@@ -69,7 +69,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente\Fmr_Add_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Fmr_Add_Clientes.designer.cs">
+      <DependentUpon>Fmr_Add_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Fmr_Editar_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Fmr_Editar_Clientes.designer.cs">
+      <DependentUpon>Fmr_Editar_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Form_Listado_del_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Form_Listado_del_Cliente.designer.cs">
+      <DependentUpon>Form_Listado_del_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Frm_Explo_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Frm_Explo_Clientes.designer.cs">
+      <DependentUpon>Frm_Explo_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cls_UsuLogin.cs" />
+    <Compile Include="Compras\Frm_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_Compras.designer.cs">
+      <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_Solo_Cantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_Solo_Cantidad.designer.cs">
+      <DependentUpon>Frm_Solo_Cantidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Filtro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +141,12 @@
     </Compile>
     <Compile Include="Producto\Frm_Explo_Productos.designer.cs">
       <DependentUpon>Frm_Explo_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\Frm_List_Pro_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\Frm_List_Pro_Compra.designer.cs">
+      <DependentUpon>Frm_List_Pro_Compra.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,6 +187,24 @@
     <Compile Include="Utilitarios\Fmr_Marca.designer.cs">
       <DependentUpon>Fmr_Marca.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cliente\Fmr_Add_Clientes.resx">
+      <DependentUpon>Fmr_Add_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Fmr_Editar_Clientes.resx">
+      <DependentUpon>Fmr_Editar_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Form_Listado_del_Cliente.resx">
+      <DependentUpon>Form_Listado_del_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Frm_Explo_Clientes.resx">
+      <DependentUpon>Frm_Explo_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Frm_Compras.resx">
+      <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Frm_Solo_Cantidad.resx">
+      <DependentUpon>Frm_Solo_Cantidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Filtro.resx">
       <DependentUpon>Frm_Filtro.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Producto\Frm_Explo_Productos.resx">
       <DependentUpon>Frm_Explo_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\Frm_List_Pro_Compra.resx">
+      <DependentUpon>Frm_List_Pro_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -278,6 +341,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descargar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_157458610-stock-photo-black-brick-wall-for-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_146578689-stock-photo-bright-gray-background-with-abstract.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axalta-fine-collection_ral_7031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAL_7035_-_GRIS_LUMINOSO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axalta-fine-collection_ral_70311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_26px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -163,7 +163,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscadorCategoria.Name = "LblBuscadorCategoria";
             this.LblBuscadorCategoria.Size = new System.Drawing.Size(32, 23);
             this.LblBuscadorCategoria.TabIndex = 148;
-            this.LblBuscadorCategoria.Click += new System.EventHandler(this.LblBuscadorCategoria_Click_1);
+            this.LblBuscadorCategoria.Click += new System.EventHandler(this.LblBuscadorCategoria_Click);
             // 
             // LblBuscadorProveedor
             // 
@@ -172,7 +172,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscadorProveedor.Name = "LblBuscadorProveedor";
             this.LblBuscadorProveedor.Size = new System.Drawing.Size(32, 23);
             this.LblBuscadorProveedor.TabIndex = 147;
-            this.LblBuscadorProveedor.Click += new System.EventHandler(this.LblBuscadorProveedor_Click_1);
+            this.LblBuscadorProveedor.Click += new System.EventHandler(this.LblBuscadorProveedor_Click);
             // 
             // LblBuscaodorMarca
             // 
@@ -181,7 +181,7 @@ namespace Design_Dashboard_Modern.Producto
             this.LblBuscaodorMarca.Name = "LblBuscaodorMarca";
             this.LblBuscaodorMarca.Size = new System.Drawing.Size(32, 23);
             this.LblBuscaodorMarca.TabIndex = 146;
-            this.LblBuscaodorMarca.Click += new System.EventHandler(this.LblBuscaodorMarca_Click_1);
+            this.LblBuscaodorMarca.Click += new System.EventHandler(this.LblBuscaodorMarca_Click);
             // 
             // textBoxProveedor
             // 
@@ -258,7 +258,7 @@ namespace Design_Dashboard_Modern.Producto
             this.bunifuThinButtonLimpiar.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButtonLimpiar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.bunifuThinButtonLimpiar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.bunifuThinButtonLimpiar.Location = new System.Drawing.Point(157, 600);
+            this.bunifuThinButtonLimpiar.Location = new System.Drawing.Point(157, 601);
             this.bunifuThinButtonLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButtonLimpiar.Name = "bunifuThinButtonLimpiar";
             this.bunifuThinButtonLimpiar.Size = new System.Drawing.Size(161, 53);
@@ -267,6 +267,7 @@ namespace Design_Dashboard_Modern.Producto
             // 
             // pictureBoxProducto
             // 
+            this.pictureBoxProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxProducto.Location = new System.Drawing.Point(403, 325);
             this.pictureBoxProducto.Name = "pictureBoxProducto";
             this.pictureBoxProducto.Size = new System.Drawing.Size(271, 197);
@@ -391,6 +392,7 @@ namespace Design_Dashboard_Modern.Producto
             this.labelBuscarImagen.Size = new System.Drawing.Size(98, 16);
             this.labelBuscarImagen.TabIndex = 139;
             this.labelBuscarImagen.Text = "Buscar imagen";
+            this.labelBuscarImagen.Click += new System.EventHandler(this.labelBuscarImagen_Click);
             // 
             // labelProveedor
             // 
@@ -558,7 +560,7 @@ namespace Design_Dashboard_Modern.Producto
             this.labelPrecioCompra.TabIndex = 132;
             this.labelPrecioCompra.Text = "Precio Compra S/";
             // 
-            // Form_Agregar_Productos
+            // Frm_Agregar_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -606,7 +608,7 @@ namespace Design_Dashboard_Modern.Producto
             this.Controls.Add(this.PanelProducto);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_Agregar_Productos";
+            this.Name = "Frm_Agregar_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Agregar_Productos";
             this.Load += new System.EventHandler(this.Form_Agregar_Productos_Load);

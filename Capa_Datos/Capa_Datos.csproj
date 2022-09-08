@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_Categoria.cs" />
+    <Compile Include="BD_Cliente.cs" />
     <Compile Include="BD_Conexion.cs" />
+    <Compile Include="BD_Distrito.cs" />
     <Compile Include="BD_Kardex.cs" />
     <Compile Include="BD_Marca.cs" />
     <Compile Include="BD_Productos.cs" />
