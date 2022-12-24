@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Capa_Entidad;
 using Capa_Negocio;
@@ -27,6 +28,12 @@ namespace Design_Dashboard_Modern.Proveedor
         string xFortoruta = "";
 
         //listo
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
         private void lbl_Abrir_Click(object sender, EventArgs e)
         {
            var FilePath = string.Empty;

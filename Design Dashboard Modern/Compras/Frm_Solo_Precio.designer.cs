@@ -1,6 +1,6 @@
 ﻿namespace Design_Dashboard_Modern.Compras
 {
-    partial class Frm_Solo_Cantidad
+    partial class Frm_Solo_Precio
     {
         /// <summary>
         /// Required designer variable.
@@ -50,9 +50,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(128, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Cantidad";
+            this.label1.Text = "Precio";
             // 
             // pnl_titu
             // 
@@ -89,13 +89,13 @@
             // txt_cant
             // 
             this.txt_cant.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_cant.Location = new System.Drawing.Point(75, 85);
+            this.txt_cant.Location = new System.Drawing.Point(66, 84);
             this.txt_cant.Multiline = true;
             this.txt_cant.Name = "txt_cant";
             this.txt_cant.Size = new System.Drawing.Size(191, 36);
-            this.txt_cant.TabIndex = 489;
+            this.txt_cant.TabIndex = 488;
             // 
-            // Frm_Solo_Cantidad
+            // Frm_Solo_Precio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,7 +107,7 @@
             this.Controls.Add(this.pnl_titu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "Frm_Solo_Cantidad";
+            this.Name = "Frm_Solo_Precio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cantidad";
             this.Load += new System.EventHandler(this.Frm_Solo_Canti_Load);
@@ -125,7 +125,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_titu;
         internal System.Windows.Forms.Label lbl_nom;
-        //internal Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_cant;
+       // internal Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_cant;
         private System.Windows.Forms.Label label4;
         internal System.Windows.Forms.TextBox txt_cant;
         //private Klik.Windows.Forms.v1.EntryLib.ELDivider elDivider1;

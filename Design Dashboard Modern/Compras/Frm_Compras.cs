@@ -7,7 +7,6 @@ using System.Windows.Forms;
 using Capa_Datos;
 using Capa_Entidad;
 using Capa_Negocio;
-
 using Design_Dashboard_Modern.Utilitarios;
 
 namespace Design_Dashboard_Modern.Compras
@@ -178,19 +177,6 @@ namespace Design_Dashboard_Modern.Compras
         }
         private void btn_Nuevo_buscarProd_Click(object sender, EventArgs e)
         {
-            Frm_Filtro fill = new Frm_Filtro();
-            Frm_List_Pro_Compra com = new Frm_List_Pro_Compra();
-
-            fill.Show();
-            com.txt_buscar_Producto.Focus();
-            com.ShowDialog();
-            fill.Hide();
-
-            if (com.Tag.ToString() == "A")
-            {
-                Agregar_Producto_AlCarrito();
-                txt_IdComp.Text = RN_Tipo_Documento.RN_Numero_ID(9);
-            }
 
         }
 
@@ -212,38 +198,38 @@ namespace Design_Dashboard_Modern.Compras
 
         private void bt_editPre_Click(object sender, EventArgs e)
         {
-            //Frm_Filtro filtro = new Frm_Filtro();
-            //Frm_Solo_Precio Precio = new Frm_Solo_Precio();
+            Frm_Filtro filtro = new Frm_Filtro();
+            Frm_Solo_Precio Precio = new Frm_Solo_Precio();
 
-            //if (lsv_Det.SelectedIndices.Count == 0)
-            //{
-            //    MessageBox.Show("ingrese el atiem para modificar el precio", "Editar precio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            //}
-            //else
-            //{
-            //    double Precio_ingresado = 0;
-            //    double Precio_Editado = 0;
+            if (lsv_Det.SelectedIndices.Count == 0)
+            {
+                MessageBox.Show("ingrese el atiem para modificar el precio", "Editar precio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                double Precio_ingresado = 0;
+                double Precio_Editado = 0;
 
-            //    Precio_ingresado = Convert.ToDouble( lsv_Det.SelectedItems[0].SubItems[3].Text);
+                Precio_ingresado = Convert.ToDouble(lsv_Det.SelectedItems[0].SubItems[3].Text);
 
-            //    filtro.Show();
-            //    Precio.txt_cant.Text = Precio_ingresado.ToString();
-            //    Precio.ShowDialog();
-            //    filtro.Hide();
+                filtro.Show();
+                Precio.txt_cant.Text = Precio_ingresado.ToString();
+                Precio.ShowDialog();
+                filtro.Hide();
 
-            //    if (Precio.Tag.ToString() == "A")
-            //    {
-            //        Precio_Editado = Convert.ToDouble(Precio.txt_cant.Text);
-            //        lsv_Det.SelectedItems[0].SubItems[3].Text = Precio_Editado.ToString();
-            //        Calcular();
-            //    }
-            //}
+                if (Precio.Tag.ToString() == "A")
+                {
+                    Precio_Editado = Convert.ToDouble(Precio.txt_cant.Text);
+                    lsv_Det.SelectedItems[0].SubItems[3].Text = Precio_Editado.ToString();
+                    Calcular();
+                }
+            }
         }
 
         private void bt_editCant_Click(object sender, EventArgs e)
         {
             Frm_Filtro filtro = new Frm_Filtro();
-            //Frm_Solo_Cantidad Cantidad = new Frm_Solo_Cantidad();
+            Frm_Solo_Cantidad Cantidad = new Frm_Solo_Cantidad();
 
             if (lsv_Det.SelectedIndices.Count == 0)
             {
@@ -257,16 +243,16 @@ namespace Design_Dashboard_Modern.Compras
                 Cantidad_ingresado = Convert.ToDouble(lsv_Det.SelectedItems[0].SubItems[2].Text);
 
                 filtro.Show();
-                //Cantidad.txt_cant.Text = Cantidad_ingresado.ToString();
-                //Cantidad.ShowDialog();
-                //filtro.Hide();
+                Cantidad.txt_cant.Text = Cantidad_ingresado.ToString();
+                Cantidad.ShowDialog();
+                filtro.Hide();
 
-                //if (Cantidad.Tag.ToString() == "A")
-                //{
-                //    Cantidad_Editado = Convert.ToDouble(Cantidad.txt_cant.Text);
-                //    lsv_Det.SelectedItems[0].SubItems[2].Text = Cantidad_Editado.ToString();
-                //    Calcular();
-                //}
+                if (Cantidad.Tag.ToString() == "A")
+                {
+                    Cantidad_Editado = Convert.ToDouble(Cantidad.txt_cant.Text);
+                    lsv_Det.SelectedItems[0].SubItems[2].Text = Cantidad_Editado.ToString();
+                    Calcular();
+                }
             }
         }
 
@@ -400,147 +386,160 @@ namespace Design_Dashboard_Modern.Compras
         }
         private void Registrar_Compra()
         {
-            //EN_Ingreso_Compra IngCom = new EN_Ingreso_Compra();
-            //EN_Det_Ingreso_Compra DetCom = new EN_Det_Ingreso_Compra();
-            //RN_Ingreso_Compra IngCoR = new RN_Ingreso_Compra();
-            //RN_Productos RnProduct = new RN_Productos();
+            EN_Ingreso_Compra IngCom = new EN_Ingreso_Compra();
+            EN_Det_Ingreso_Compra DetCom = new EN_Det_Ingreso_Compra();
+            RN_Ingreso_Compra IngCoR = new RN_Ingreso_Compra();
+            RN_Producto RnProduct = new RN_Producto();
 
-            //try
-            //{
-               
-            //    IngCom.IdCom = txt_IdComp.Text;
-            //    IngCom.Nro_Fac_Fisico = txt_NroFisico.Text;
-            //    IngCom.IdProvee = cbo_provee.SelectedValue.ToString();
-            //    IngCom.SubTotal_Com = Convert.ToDouble(lbl_subtotal.Text);
-            //    IngCom.FechaIngre = dtp_FechaCom.Value;
-            //    IngCom.IdUsu = Convert.ToInt32(Cls_Libreria.IdUsu); // de donde salio Cls_Libreria ojo estudiar esa parte
-            //    IngCom.ModalidadPago = cbo_tipoPago.Text;
-            //    IngCom.TiempoEspera = 0;
-            //    IngCom.FechaVence = dtp_FechaVenc.Value;
-            //    IngCom.EstadoIngre = "Activo";
-            //    IngCom.RecibiConforme = recibiConforme;
-            //    IngCom.Datos_Adicional = txt_obser.Text;
-            //    IngCom.Tipo_Doc_Compra = cbo_tipoDoc.Text;
+            try
+            {
 
-            //    IngCoR.RN_ingreso_Compra(IngCom);
+                IngCom.IdCom = txt_IdComp.Text;
+                IngCom.Nro_Fac_Fisico = txt_NroFisico.Text;
+                IngCom.IdProvee = cbo_provee.SelectedValue.ToString();
+                IngCom.SubTotal_Com = lbl_subtotal.Text;
+                IngCom.FechaIngre = dtp_FechaCom.Value;
+                IngCom.IdUsu = Convert.ToInt32(Cls_Libreria.IdUsu); // de donde salio Cls_Libreria ojo estudiar esa parte
+                IngCom.ModalidadPago = cbo_tipoPago.Text;
+                IngCom.TiempoEspera = 0;
+                IngCom.FechaVence = dtp_FechaVenc.Value;
+                IngCom.EstadoIngre = "Activo";
+                IngCom.RecibiConforme = recibiConforme;
+                IngCom.Datos_Adicional = txt_obser.Text;
+                IngCom.Tipo_Doc_Compra = cbo_tipoDoc.Text;
 
-            //    if (BD_Ingreso_Compra.guardar == true)
-            //    {
-            //        RN_Tipo_Documento.RN_Actualizar_Tipo_Document_CorelativoProducto(9);
+                IngCoR.RN_ingreso_Compra(IngCom);
 
-            //        //Detelle de Compra
+                if (BD_Ingreso_Compra.guardar == true)
+                {
+                    RN_Tipo_Documento.RN_Actualizar_Tipo_Document_CorelativoProducto(9);
 
-            //        for (int i = 0; i < lsv_Det.Items.Count; i++)
-            //        {
-            //            var items = lsv_Det.Items[i];
-            //            DetCom.Id_ingreso = txt_IdComp.Text;
-            //            //esta es la parte que del lisvew estoy tomando los datos para agregarlo al detalle de compra
-            //            DetCom.Id_Pro = items.SubItems[0].Text;
-            //            DetCom.Cantidad = Convert.ToDouble(items.SubItems[2].Text);
-            //            DetCom.Precio = Convert.ToDouble(items.SubItems[3].Text);
-            //            DetCom.Importe = Convert.ToDouble(items.SubItems[4].Text);
+                    //Detelle de Compra
 
-            //            IngCoR.RN_Ingrese_Detalle_IngresoCompra(DetCom);
-            //            Registar_MovimientoDe_Kardex(DetCom.Id_Pro.Trim(), DetCom.Cantidad, DetCom.Precio);
+                    for (int i = 0; i < lsv_Det.Items.Count; i++)
+                    {
+                        var items = lsv_Det.Items[i];
+                        DetCom.Id_ingreso = txt_IdComp.Text;
+                        //esta es la parte que del lisvew estoy tomando los datos para agregarlo al detalle de compra
+                        DetCom.Id_Pro = items.SubItems[0].Text;
+                        DetCom.Cantidad = items.SubItems[2].Text;
+                        DetCom.Precio = items.SubItems[3].Text;
+                        DetCom.Importe = items.SubItems[4].Text;
 
-            //            //Actiualizacion el precio del producto
-            //            double utilidad = 0;
-            //            double valorAlmacen = 0;
-            //            double PreCom = 0;
-            //            double PreVent = 0;
-            //            double Xfrank = 0;
+                        IngCoR.RN_Ingrese_Detalle_IngresoCompra(DetCom);
 
-            //            Xfrank = Buscar_Frank_Producto(DetCom.Id_Pro.Trim());
-            //            PreVent = Xfrank * PreCom;
-            //            utilidad = PreVent - PreCom;
-            //            valorAlmacen = DetCom.Cantidad * PreCom;
+                        Registar_MovimientoDe_Kardex(DetCom.Id_Pro.Trim(), DetCom.Cantidad, DetCom.Precio);
 
-            //            RnProduct.RN_Actulizar_Precios_Compra_Venta_Producto(DetCom.Id_Pro.Trim(),PreCom, PreVent, utilidad, valorAlmacen);
+                        //Actiualizacion el precio del producto
+                        double utilidad = 0;
+                        double valorAlmacen = 0;
+                        string PreCom = "";
+                        double PreVent = 0;
+                        double Xfrank = 0;
+                        // convertir en string
+                        string prevent = "";
+                        string Utilidad = "";
+                        string ValorAlmacen = "";
 
-            //        }
-            //        Frm_Filtro Filtro = new Frm_Filtro();
-            //        Frm_Msm_Bueno bueno = new Frm_Msm_Bueno();
+                        Xfrank = Buscar_Frank_Producto(DetCom.Id_Pro.Trim());
+                        PreVent = Xfrank * Convert.ToDouble(PreCom);
+                        utilidad = PreVent - Convert.ToDouble(PreCom);
+                        valorAlmacen =  Convert.ToDouble( DetCom.Cantidad) * Convert.ToDouble(PreCom);
 
-            //        Filtro.Show();
-            //        bueno.Lbl_msm1.Text = "Los datos de la Compra de han registrado correctamente";
-            //        bueno.ShowDialog();
-            //        Filtro.Hide();
+                        prevent = Convert.ToString(PreVent);
+                        Utilidad = Convert.ToString(utilidad);
+                        ValorAlmacen = Convert.ToString(valorAlmacen);
 
-            //        lsv_Det.Items.Clear();
-            //        cbo_provee.SelectedIndex = -1;
-            //        txt_NroFisico.Text = "";
-            //        cbo_tipoDoc.Text = "";
-            //        cbo_tipoPago.Text = "";
-            //        txt_obser.Text = "";
+                        RnProduct.RN_Actulizar_Precios_Compra_Venta_Producto(DetCom.Id_Pro.Trim(), PreCom, prevent, Utilidad, ValorAlmacen);
 
-            //        this.Tag = "A";
-            //        //this.Close();
-            //    }
+                    }
+                    Frm_Filtro Filtro = new Frm_Filtro();
+                    Frm_Msm_Bueno bueno = new Frm_Msm_Bueno();
 
-            //}
-            //catch (Exception Ex)
-            //{
-            //    MessageBox.Show("Error al regitrar la compra" + Ex);
-            //}
+                    Filtro.Show();
+                    bueno.Lbl_msm1.Text = "Los datos de la Compra de han registrado correctamente";
+                    bueno.ShowDialog();
+                    Filtro.Hide();
+
+                    lsv_Det.Items.Clear();
+                    cbo_provee.SelectedIndex = -1;
+                    txt_NroFisico.Text = "";
+                    cbo_tipoDoc.Text = "";
+                    cbo_tipoPago.Text = "";
+                    txt_obser.Text = "";
+
+                    this.Tag = "A";
+                    //this.Close();
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error al regitrar la compra" + Ex);
+            }
 
         }
-        private void Registar_MovimientoDe_Kardex(string IdProd, double Xcant, double PrecioCmpra)
+        private void Registar_MovimientoDe_Kardex(string IdProd, string Xcant, string PrecioCmpra)
         {
             RN_Kardex RnKar = new RN_Kardex();
             EN_Kardex Enkar = new EN_Kardex();
-           // RN_Productos RnPro = new RN_Productos();
+            RN_Producto RnPro = new RN_Producto();
             DataTable data = new DataTable();
             DataTable datoPro = new DataTable();
 
             string idkarDex = "";
-            int itemsKar = 0;
-            double stockPro = 0;
-            double PreComPro = 0;
+            string itemsKar = "";
+            string stockPro = "";
+            string PreComPro = "";
 
 
-            //try
-            //{
-            //    if(RnKar.BD_Verificar_Producto_SiTieneKardex(IdProd) == true)
-            //    {
-            //        data = RnKar.RN_Buscar_KardexDetalle_porProducto(IdProd.Trim());
+            try
+            {
+                if (RnKar.BD_Verificar_Producto_SiTieneKardex(IdProd) == true)
+                {
+                    data = RnKar.RN_Buscar_KardexDetalle_porProducto(IdProd.Trim());
 
-            //        if (data.Rows.Count > 0)
-            //        {
-            //            idkarDex = Convert.ToString(data.Rows[0]["Id_krdx"]);
-            //            itemsKar = data.Rows.Count;
+                    if (data.Rows.Count > 0)
+                    {
+                        idkarDex = Convert.ToString(data.Rows[0]["Id_krdx"]);
+                        itemsKar = Convert.ToString( data.Rows.Count);
 
-            //            datoPro = RnPro.RN_Buscar_Productos(IdProd.Trim());
-            //            stockPro = Convert.ToDouble(datoPro.Rows[0]["Stock_Actual"]);
-            //            PreComPro = Convert.ToDouble(datoPro.Rows[0]["Pre_CompraS"]);
+                        datoPro = RnPro.RN_Buscar_Productos(IdProd.Trim());
+                        stockPro = Convert.ToString(datoPro.Rows[0]["Stock_Actual"]);
+                        PreComPro = Convert.ToString(datoPro.Rows[0]["Pre_CompraS"]);
 
-            //            Enkar.IdKardex = idkarDex;
-            //            Enkar.Item = itemsKar + 1;
-            //            Enkar.Doc_soporte = txt_NroFisico.Text;
-            //            Enkar.Det_operacion = "Compra De Mercaderia";
-            //            //entrada
-            //            Enkar.Cantidad_In = Xcant;
-            //            Enkar.Precio_Unit_In = PrecioCmpra;
-            //            Enkar.Costo_Total_In = Xcant * PrecioCmpra;
-            //            //salida
-            //            Enkar.Cantidad_Out = 0;
-            //            Enkar.Precio_Unt_Out = 0;
-            //            Enkar.Importe_Total_Out = 0;
-            //            //saldos
-            //            Enkar.Cantidad_Saldo = stockPro * Xcant;
-            //            Enkar.Promedio = PrecioCmpra;
-            //            Enkar.Costo_Total_Saldo = PrecioCmpra * Enkar.Cantidad_Saldo;
+                        Enkar.IdKardex = idkarDex;
+                        Enkar.Item = Convert.ToInt32( itemsKar) + 1;
+                        Enkar.Doc_soporte = txt_NroFisico.Text;
+                        Enkar.Det_operacion = "Compra De Mercaderia";
+                        //entrada
+                        Enkar.Cantidad_In = Xcant;
+                        Enkar.Precio_Unit_In = PrecioCmpra;
 
-            //            RnKar.RN_Registrar_Detalle_Kardex(Enkar);
-            //            RnPro.RN_Sumar_stock_Producto(IdProd.Trim(), Xcant);
+                        double xcant = Convert.ToDouble(Xcant);
+                        double precioCmpra = Convert.ToDouble(PrecioCmpra);
 
-            //        }
-            //    }
-            //}
-            //catch (Exception Ex)
-            //{
-            //    string sms = Ex.Message;
-            //    MessageBox.Show(sms);
-            //}
+                        Enkar.Costo_Total_In = Convert.ToString( xcant * precioCmpra);
+                        //salida
+                        Enkar.Cantidad_Out = "";
+                        Enkar.Precio_Unt_Out = "";
+                        Enkar.Importe_Total_Out = "";
+                        //saldos
+                        Enkar.Cantidad_Saldo = Convert.ToString( Convert.ToDouble( stockPro) * Convert.ToDouble(Xcant));
+                        Enkar.Promedio = PrecioCmpra;
+                        Enkar.Costo_Total_Saldo = Convert.ToString(Convert.ToDouble( PrecioCmpra) * Convert.ToDouble(Enkar.Cantidad_Saldo));
+
+                        RnKar.RN_Registrar_Detalle_Kardex(Enkar);
+                        RnPro.RN_Sumar_stock_Producto(IdProd.Trim(), Xcant);
+
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                string sms = Ex.Message;
+                MessageBox.Show(sms);
+            }
         }
         private void btn_procesar_Click(object sender, EventArgs e)
         {
@@ -560,6 +559,11 @@ namespace Design_Dashboard_Modern.Compras
             {
                 recibiConforme = false;
             }
+        }
+
+        private void bunifuThinButtonRegistrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

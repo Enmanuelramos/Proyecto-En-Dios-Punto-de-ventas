@@ -31,5 +31,16 @@ namespace Capa_Negocio
             BD_Productos product = new BD_Productos();
             product.BD_Modificar_Productos(ModPro);
         }
+        public void RN_Actulizar_Precios_Compra_Venta_Producto(string Id_Pro, string Pre_CompraS, string Pre_vntaxMenor, string Utilidad, string ValorAlmacen)
+        {
+            BD_Productos Actualizar = new BD_Productos();
+            Actualizar.BD_Actulizar_Precios_Compra_Venta_Producto(Id_Pro, Pre_CompraS, Pre_vntaxMenor, Utilidad, ValorAlmacen);
+
+        }
+        public void RN_Sumar_stock_Producto(string v, string a)
+        {
+            BD_Productos Suma_Stock = new BD_Productos();
+            Suma_Stock.BD_Sumar_stock_Producto(v, a);
+        }
     }
 }

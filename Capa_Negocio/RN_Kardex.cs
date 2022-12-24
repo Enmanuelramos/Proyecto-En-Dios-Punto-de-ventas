@@ -31,5 +31,6 @@ namespace Capa_Negocio
             BD_Kardex kar = new BD_Kardex();
             return kar.BD_Buscar_KardexDetalle_porProducto(idPro);
         }
+        
     }
 }

@@ -53,6 +53,10 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Klik.Windows.Forms.EntryLib.V2.2005, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Klik.Windows.Forms.EntryLib.V2.2005.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -105,6 +109,12 @@
     </Compile>
     <Compile Include="Compras\Frm_Solo_Cantidad.designer.cs">
       <DependentUpon>Frm_Solo_Cantidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Frm_Solo_Precio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Frm_Solo_Precio.designer.cs">
+      <DependentUpon>Frm_Solo_Precio.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Filtro.cs">
       <SubType>Form</SubType>
@@ -187,6 +197,12 @@
     <Compile Include="Utilitarios\Fmr_Marca.designer.cs">
       <DependentUpon>Fmr_Marca.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilitarios\Frm_Msm_Bueno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Frm_Msm_Bueno.designer.cs">
+      <DependentUpon>Frm_Msm_Bueno.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cliente\Fmr_Add_Clientes.resx">
       <DependentUpon>Fmr_Add_Clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Frm_Solo_Cantidad.resx">
       <DependentUpon>Frm_Solo_Cantidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Frm_Solo_Precio.resx">
+      <DependentUpon>Frm_Solo_Precio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Filtro.resx">
       <DependentUpon>Frm_Filtro.cs</DependentUpon>
@@ -226,6 +245,7 @@
     <EmbeddedResource Include="Producto\Frm_List_Pro_Compra.resx">
       <DependentUpon>Frm_List_Pro_Compra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -253,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Utilitarios\Fmr_Marca.resx">
       <DependentUpon>Fmr_Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\Frm_Msm_Bueno.resx">
+      <DependentUpon>Frm_Msm_Bueno.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

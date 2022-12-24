@@ -154,5 +154,69 @@ namespace Capa_Datos
                 MessageBox.Show("No se pudo Modificar los datos" + Ex.Message, "BD_Modificar_Producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void BD_Actulizar_Precios_Compra_Venta_Producto(string Id_Pro, string Pre_CompraS, string Pre_vntaxMenor, string Utilidad, string ValorAlmacen)
+
+        {
+            SqlConnection cn = new SqlConnection();
+
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlCommand Actualizar_Producto = new SqlCommand("Sp_Actulizar_Precios_CompraVenta_Producto", cn);
+                Actualizar_Producto.CommandTimeout = 20;
+                Actualizar_Producto.CommandType = CommandType.StoredProcedure;
+                Actualizar_Producto.Parameters.AddWithValue("@Id_Pro", Id_Pro);
+                Actualizar_Producto.Parameters.AddWithValue("@Pre_CompraS", Pre_CompraS);
+                Actualizar_Producto.Parameters.AddWithValue("@Pre_vntaxMenor", Pre_vntaxMenor);
+                Actualizar_Producto.Parameters.AddWithValue("@Utilidad", Utilidad);
+                Actualizar_Producto.Parameters.AddWithValue("@ValorAlmacen ", ValorAlmacen);
+
+                cn.Open();
+                Actualizar_Producto.ExecuteNonQuery();
+                cn.Close();
+
+                seguardo = true;
+            }
+            catch (Exception Ex)
+            {
+                seguardo = false;
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+                MessageBox.Show("No se pudo restar" + Ex.Message, "BD_Producto BD_Insertar_Productos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        public void BD_Sumar_stock_Producto(string v, string a)
+        {
+            SqlConnection cn = new SqlConnection();
+
+            try
+            {
+                cn.ConnectionString = Conectar();
+                SqlCommand sumar = new SqlCommand("sp_SumarStock", cn);
+                sumar.CommandTimeout = 20;
+                sumar.CommandType = CommandType.StoredProcedure;
+                sumar.Parameters.AddWithValue("@idpro", v);
+                sumar.Parameters.AddWithValue("@stock", a);
+
+                cn.Open();
+                sumar.ExecuteNonQuery();
+                cn.Close();
+
+                seguardo = true;
+
+            }
+            catch (Exception Ex)
+            {
+                seguardo = false;
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+                MessageBox.Show("No se pudo insertar Producto" + Ex.Message, "BD_Producto BD_Insertar_Productos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+        }
     }
 }

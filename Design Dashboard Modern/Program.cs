@@ -21,7 +21,7 @@ namespace Design_Dashboard_Modern
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form_Listado_del_Cliente());
-            Application.Run(new Frm_Compras());
+            Application.Run(new Frm_Login());
         }
     }
 }

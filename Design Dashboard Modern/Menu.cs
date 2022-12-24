@@ -12,6 +12,7 @@ using Design_Dashboard_Modern.Producto;
 using Design_Dashboard_Modern.Proveedor;
 using Design_Dashboard_Modern.Cliente;
 using System.Runtime.InteropServices;
+using Design_Dashboard_Modern.Compras;
 
 namespace Design_Dashboard_Modern
 {
@@ -106,7 +107,7 @@ namespace Design_Dashboard_Modern
 
             Frm_Explo_Productos Expro = new Frm_Explo_Productos();
             //Frm_List_Pro_Compra Expro = new Frm_List_Pro_Compra();
-
+           // Frm_Compras ProCom = new Frm_Compras();
             var frm = Application.OpenForms.OfType<Frm_Explo_Productos>().FirstOrDefault();
 
             if (frm == null)
@@ -118,12 +119,8 @@ namespace Design_Dashboard_Modern
             {
                 MessageBox.Show("el formulario Producto esta abierto");
                 Expro.WindowState = FormWindowState.Normal;
-
-
             }
-
         }
-
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             // OpenChildFrom(new Frm_Vista_Proveedor());

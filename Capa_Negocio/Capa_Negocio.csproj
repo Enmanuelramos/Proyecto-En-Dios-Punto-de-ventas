@@ -47,6 +47,7 @@
     <Compile Include="RN_Categoria.cs" />
     <Compile Include="RN_Clientes.cs" />
     <Compile Include="RN_Distrito.cs" />
+    <Compile Include="RN_Ingreso_Compra.cs" />
     <Compile Include="RN_Kardex.cs" />
     <Compile Include="RN_Marca.cs" />
     <Compile Include="RN_Producto.cs" />
